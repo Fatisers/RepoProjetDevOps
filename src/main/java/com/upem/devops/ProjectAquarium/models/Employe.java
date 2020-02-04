@@ -22,7 +22,7 @@ public class Employe {
 	  private String prenom;
 	  private String adresse;
 	  @OneToOne(targetEntity=Date.class)
-	  private Date dateDeNaissance;
+	  private String dateDeNaissance;
 	  private String numSecuSociale;
 	  private String role;
 	  @ManyToMany(targetEntity=Bassin.class)
@@ -32,9 +32,7 @@ public class Employe {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employe(int idEmploye, String nom, String identifiant, String motdepasse, String prenom, String adresse,
-			Date dateDeNaissance, String numSecuSociale, String role, List<Bassin> listebassins) {
-		super();
+	public Employe(int idEmploye, String nom, String identifiant, String motdepasse, String prenom, String adresse, String dateDeNaissance, String numSecuSociale, String role, List<Bassin> listebassins) {
 		this.idEmploye = idEmploye;
 		this.nom = nom;
 		this.identifiant = identifiant;
@@ -95,11 +93,11 @@ public class Employe {
 		this.adresse = adresse;
 	}
 
-	public Date getDateDeNaissance() {
+	public String getDateDeNaissance() {
 		return dateDeNaissance;
 	}
 
-	public void setDateDeNaissance(Date dateDeNaissance) {
+	public void setDateDeNaissance(String dateDeNaissance) {
 		this.dateDeNaissance = dateDeNaissance;
 	}
 

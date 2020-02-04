@@ -13,21 +13,20 @@ public class Activite {
 	 @GeneratedValue(strategy = GenerationType.AUTO)
 	  private int idActivite;
 	 @OneToOne(targetEntity=Date.class)
-	  private Date jour;
+	  private String jour;
 	  private String nom;
 	  private String heureDebut;
 	  private String heureFin;
 	  private String publiqueOuPrivee;
 	  private int idBassin;
 	  private int idEmploye;
+
 	  
 	public Activite() {
 
 	}
 
-	public Activite(int idActivite, Date jour, String nom, String heureDebut, String heureFin, String publiqueOuPrivee,
-			int idBassin, int idEmploye) {
-		super();
+	public Activite(int idActivite, String jour, String nom, String heureDebut, String heureFin, String publiqueOuPrivee, int idBassin, int idEmploye) {
 		this.idActivite = idActivite;
 		this.jour = jour;
 		this.nom = nom;
@@ -46,11 +45,11 @@ public class Activite {
 		this.idActivite = idActivite;
 	}
 
-	public Date getJour() {
+	public String getJour() {
 		return jour;
 	}
 
-	public void setJour(Date jour) {
+	public void setJour(String jour) {
 		this.jour = jour;
 	}
 

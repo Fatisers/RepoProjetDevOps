@@ -16,20 +16,16 @@ public class Animal {
 	  private String nom;
 	  private String sexe;
 	  private String signeDistinctif;
-	  @OneToOne(targetEntity=Date.class)
-	  private Date dateArrivee;
-	  @OneToOne(targetEntity=Date.class)
-	  private Date dateDepartPossible;
+	  private String dateArrivee;
+	  private String dateDepartPossible;
 	  private int idEspece;
 	  private int idBassin;
 	  
 	public Animal() {
 
 	}
-	  
-	public Animal(int idAnimal, String nom, String sexe, String signeDistinctif, Date dateArrivee,
-			Date dateDepartPossible, int idEspece, int idBassin) {
-		super();
+
+	public Animal(int idAnimal, String nom, String sexe, String signeDistinctif, String dateArrivee, String dateDepartPossible, int idEspece, int idBassin) {
 		this.idAnimal = idAnimal;
 		this.nom = nom;
 		this.sexe = sexe;
@@ -72,19 +68,19 @@ public class Animal {
 		this.signeDistinctif = signeDistinctif;
 	}
 
-	public Date getDateArrivee() {
+	public String getDateArrivee() {
 		return dateArrivee;
 	}
 
-	public void setDateArrivee(Date dateArrivee) {
+	public void setDateArrivee(String dateArrivee) {
 		this.dateArrivee = dateArrivee;
 	}
 
-	public Date getDateDepartPossible() {
+	public String getDateDepartPossible() {
 		return dateDepartPossible;
 	}
 
-	public void setDateDepartPossible(Date dateDepartPossible) {
+	public void setDateDepartPossible(String dateDepartPossible) {
 		this.dateDepartPossible = dateDepartPossible;
 	}
 
@@ -106,10 +102,15 @@ public class Animal {
 
 	@Override
 	public String toString() {
-		return "Animal [idAnimal=" + idAnimal + ", nom=" + nom + ", sexe=" + sexe + ", signeDistinctif="
-				+ signeDistinctif + ", dateArrivee=" + dateArrivee + ", dateDepartPossible=" + dateDepartPossible
-				+ ", idEspece=" + idEspece + ", idBassin=" + idBassin + "]";
+		return "Animal{" +
+				"idAnimal=" + idAnimal +
+				", nom='" + nom + '\'' +
+				", sexe='" + sexe + '\'' +
+				", signeDistinctif='" + signeDistinctif + '\'' +
+				", dateArrivee='" + dateArrivee + '\'' +
+				", dateDepartPossible='" + dateDepartPossible + '\'' +
+				", idEspece=" + idEspece +
+				", idBassin=" + idBassin +
+				'}';
 	}
-	   
-	  
 }

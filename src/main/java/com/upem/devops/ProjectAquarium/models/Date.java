@@ -18,7 +18,7 @@ public class Date {
 		
 	}
 
-	
+
 
 	public Date(int idDate, int jour, int mois, int annee) {
 		super();
@@ -58,6 +58,6 @@ public class Date {
 	public String toString() {
 		return jour + "/" + mois + "/" + annee ;
 	}
-	
-	
+
+
 }

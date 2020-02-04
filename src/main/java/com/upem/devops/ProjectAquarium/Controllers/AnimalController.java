@@ -28,7 +28,7 @@ public class AnimalController {
 
 	    @GetMapping("/animal/{id}")
 	    public Animal getAnimal(@PathVariable Integer id) {
-	    	Animal a = new Animal(1, "animal", "male", "cancer", new Date(1 , 1, 2, 1990), new Date(2 , 1, 2, 1990), 2, 2);
+	    	Animal a = new Animal(1, "animaleee", "male", "cancer", "11/11/2020", "12/11/2022", 2, 2);
 	        //return animalService.getAnimalById(id);
 	    	return a;
 	    }
@@ -36,13 +36,11 @@ public class AnimalController {
 
 	    @PostMapping(path = "/addanimaux")
 	    public void addPoissons(@RequestBody List<Animal> list) {
-	        System.out.println("-------addanimaux list---------");
 	        animalService.addAnimaux(list);
 	    }
 
 	    @PostMapping(path = "/addanimal")
 	    public void addPoisson(@RequestBody Animal a) {
-	        System.out.println("-------addanimal---------");
 	        animalService.addAnimal(a);
 	    }
 
