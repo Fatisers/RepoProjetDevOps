@@ -1,5 +1,8 @@
 package com.upem.devops.ProjectAquarium.Controllers;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.upem.devops.ProjectAquarium.models.Bassin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +36,10 @@ public class EmployeController {
 
     @GetMapping("/Employe/{id}")
     public Employe getEmploye(@PathVariable Integer id) {
-        Employe a = new Employe();
+        List<Bassin> bassins = new ArrayList<>();
+        Bassin b = new Bassin(1,14,1.4,"etat",1,1);
+        bassins.add(b);
+        Employe a = new Employe(1, "employe1", "id", "abc", "prenom", "33 rue x", "12/2/2020", "ghjk", "aaa", bassins);
         //return EmployeService.getEmployeById(id);
         return a;
     }

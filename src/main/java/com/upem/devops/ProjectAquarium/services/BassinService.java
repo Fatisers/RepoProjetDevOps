@@ -21,7 +21,7 @@ public class BassinService {
     }
 
     public Bassin getBassinById(int id) { return bassins.findById(id);}
-    public List<Bassin> getBassinByNom(String nom) { return bassins.findByNom(nom);}
+    public List<Bassin> getBassinByNom(int findByIdResponsable) { return bassins.findByIdResponsable(findByIdResponsable);}
 
 
     public Bassin addBassin(Bassin b ){

@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * Created by fatisers on 04/02/2020.
  */
+@RestController
 public class ActiviteController {
 
     @RestController

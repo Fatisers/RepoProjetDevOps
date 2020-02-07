@@ -1,5 +1,4 @@
 com/upem/devops/ProjectAquarium/services/ActiviteService.class
-com/upem/devops/ProjectAquarium/Controllers/DateController.class
 com/upem/devops/ProjectAquarium/Controllers/EspeceController.class
 com/upem/devops/ProjectAquarium/services/EspeceService.class
 com/upem/devops/ProjectAquarium/Controllers/ActiviteController.class
@@ -11,6 +10,7 @@ com/upem/devops/ProjectAquarium/services/BassinService.class
 com/upem/devops/ProjectAquarium/services/EmployeRepository.class
 com/upem/devops/ProjectAquarium/services/SecteurService.class
 com/upem/devops/ProjectAquarium/services/EmployeService.class
+com/upem/devops/ProjectAquarium/Controllers/ActiviteController$AnimalController.class
 com/upem/devops/ProjectAquarium/services/BassinRepository.class
 com/upem/devops/ProjectAquarium/Controllers/SecteurController.class
 com/upem/devops/ProjectAquarium/services/EspeceRepository.class

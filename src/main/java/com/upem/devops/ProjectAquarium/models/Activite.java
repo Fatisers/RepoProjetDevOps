@@ -12,7 +12,6 @@ public class Activite {
 	 @Id
 	 @GeneratedValue(strategy = GenerationType.AUTO)
 	  private int idActivite;
-	 @OneToOne(targetEntity=Date.class)
 	  private String jour;
 	  private String nom;
 	  private String heureDebut;

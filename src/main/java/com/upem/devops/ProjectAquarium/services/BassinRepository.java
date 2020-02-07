@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface BassinRepository extends CrudRepository<Bassin, Integer> {
 
-    List<Bassin> findByNom(String nom);
+    List<Bassin> findByIdResponsable(int idResponsable);
     Bassin findById(int id);
 }

@@ -22,7 +22,7 @@ public class EspeceService {
     }
 
     public Espece getEspeceById(int id) { return especes.findById(id);}
-    public List<Espece> getEspeceByNom(String nom) { return especes.findByNom(nom);}
+    public List<Espece> getEspeceByNom(String type) { return especes.findByType(type);}
 
 
     public Espece addEspece(Espece e ){

@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface EspeceRepository extends CrudRepository<Espece, Integer> {
 
-    List<Espece> findByNom(String nom);
+    List<Espece> findByType(String type);
     Espece findById(int id);
 }
