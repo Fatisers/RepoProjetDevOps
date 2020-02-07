@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.upem.devops.ProjectAquarium.models.Animal;
-import com.upem.devops.ProjectAquarium.models.Date;
+
 import com.upem.devops.ProjectAquarium.services.AnimalService;
 
 @RestController
@@ -35,17 +35,17 @@ public class AnimalController {
 
 
 	    @PostMapping(path = "/addanimaux")
-	    public void addPoissons(@RequestBody List<Animal> list) {
+	    public void addAnimaux(@RequestBody List<Animal> list) {
 	        animalService.addAnimaux(list);
 	    }
 
 	    @PostMapping(path = "/addanimal")
-	    public void addPoisson(@RequestBody Animal a) {
+	    public void addAnimal(@RequestBody Animal a) {
 	        animalService.addAnimal(a);
 	    }
 
 	    @PutMapping(value = "/updateanimal")
-	    public Animal updateCustomer( @RequestBody Animal animal) {
+	    public Animal updateAnimal( @RequestBody Animal animal) {
 	        return animalService.addAnimal(animal);
 	    }
 

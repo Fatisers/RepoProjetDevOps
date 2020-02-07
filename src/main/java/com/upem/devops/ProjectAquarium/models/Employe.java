@@ -21,7 +21,6 @@ public class Employe {
 	  private String motdepasse;
 	  private String prenom;
 	  private String adresse;
-	  @OneToOne(targetEntity=Date.class)
 	  private String dateDeNaissance;
 	  private String numSecuSociale;
 	  private String role;
