@@ -1,0 +1,51 @@
+
+<div align="center">
+        <h2>Form add employe</h2>
+    <mat-form-field style="width:300px" appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Prénom</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Date de naissance</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Identifiant</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Mot de passe</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+      <mat-label>Role</mat-label>
+      <mat-select>
+        <mat-option value="option">Gestionnaire de l'aquarium</mat-option>
+        <mat-option value="option">Employe</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+      <mat-label>Adresse</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill" >
+        <mat-label>Numéro de sécurité sociale</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <br>
+    <button mat-stroked-button>Ajouter</button>
+
+  </div>

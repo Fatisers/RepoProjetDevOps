@@ -1,1 +1,40 @@
-<p>add-animal works!</p>
+
+<div align="center">
+        <h2>Form add animal</h2>
+    <mat-form-field style="width:300px" appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Sexe</mat-label>
+            <mat-select>
+              <mat-option value="option">Male</mat-option>
+              <mat-option value="option">Femelle</mat-option>
+            </mat-select>
+          </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Signe distinctif</mat-label>
+            <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Date d'arrivee</mat-label>
+        <input matInput [matDatepicker]="dateArrivee">
+        <mat-datepicker-toggle matSuffix [for]="dateArrivee"></mat-datepicker-toggle>
+        <mat-datepicker #dateArrivee></mat-datepicker>
+      </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Date de depart possible</mat-label>
+            <input matInput [matDatepicker]="dateDepart">
+            <mat-datepicker-toggle matSuffix [for]="dateDepart"></mat-datepicker-toggle>
+            <mat-datepicker #dateDepart></mat-datepicker>
+          </mat-form-field>
+        <br>
+
+    <br>
+    <button mat-stroked-button>Ajouter</button>
+
+  </div>
