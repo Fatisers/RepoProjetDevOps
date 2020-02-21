@@ -1,1 +1,19 @@
-<p>visite-form works!</p>
+<div align="center">
+  <h2>Visiteur Form</h2>
+  <mat-form-field style="width:300px" appearance="fill">
+    <mat-label>Jour de la visite</mat-label>
+    <input matInput [matDatepicker]="JourVisite">
+    <mat-datepicker-toggle matSuffix [for]="JourVisite"></mat-datepicker-toggle>
+    <mat-datepicker #JourVisite></mat-datepicker>
+  </mat-form-field>
+  <br>
+
+  <mat-form-field style="width:300px" appearance="fill">
+    <mat-label>Heure</mat-label>
+    <input matInput [ngxTimepicker]="endTime" [format]="24"  placeholder="{{placeholderTime}}" formControlName="endTime" />
+  </mat-form-field>
+  <ngx-material-timepicker #endTime (timeSet)="timeChange($event)" [minutesGap]="10"></ngx-material-timepicker>
+
+  <br>
+  <button mat-stroked-button>Liste d'activités disponibles </button>
+</div>
