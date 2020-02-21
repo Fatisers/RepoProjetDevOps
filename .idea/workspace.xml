@@ -68,8 +68,8 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/angular/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/angular/angular.json" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -1417,8 +1418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/angular/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
