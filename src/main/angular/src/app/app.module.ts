@@ -52,11 +52,13 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { VisiteFormComponent } from './visiteur/visite-form/visite-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    VisiteFormComponent
   ],
   imports: [
     BrowserModule,
