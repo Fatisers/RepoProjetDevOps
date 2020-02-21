@@ -54,6 +54,8 @@ import { AddEmployeComponent } from './employe/add-employe/add-employe.component
 import { LoginComponent } from './login/login/login.component';
 import { AddAnimalComponent } from './animal/add-animal/add-animal.component';
 import { VisiteFormComponent } from './visiteur/visite-form/visite-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -122,7 +124,9 @@ import { VisiteFormComponent } from './visiteur/visite-form/visite-form.componen
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-    NgxMaterialTimepickerModule
+    NgxMaterialTimepickerModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
