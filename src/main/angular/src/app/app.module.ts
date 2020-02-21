@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
 import { MatSliderModule } from '@angular/material/slider';
 import {A11yModule} from '@angular/cdk/a11y';
@@ -116,7 +117,8 @@ import { VisiteFormComponent } from './visiteur/visite-form/visite-form.componen
         MatTooltipModule,
         MatTreeModule,
         PortalModule,
-        ScrollingModule
+        ScrollingModule,
+        NgxMaterialTimepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
