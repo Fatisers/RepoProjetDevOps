@@ -35,7 +35,6 @@ export class ServiceAnimalService {
   constructor(private http: HttpClient) { }
 
   addAnimal(animal: any)  {
-    console.log(animal);
     this.http.post("/addanimal",animal,httpOptions).subscribe(res => {     
       console.log(animal);
     },

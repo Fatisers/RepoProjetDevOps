@@ -9,6 +9,4 @@ export interface Animal  {
     idEspece:number;
     idBassin:number;
 
-    
-
 }
