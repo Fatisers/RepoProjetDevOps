@@ -1,0 +1,16 @@
+<div align="center">
+    <h2>Add Secteur Form</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onFormSubmit()">
+        <mat-form-field style="width:300px" appearance="fill">
+        <mat-label>Nom du secteur</mat-label>
+        <input matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Localisation dans l'aquarium</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
+        <button mat-stroked-button>Ajouter</button>
+    </form>
+</div>
