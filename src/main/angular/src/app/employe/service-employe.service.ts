@@ -1,12 +1,12 @@
 import { Injectable, NgModule } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { HttpClientModule,HttpHeaders } from '@angular/common/http';
+import { Employe } from '../interfaces/Employe';
+import { HttpHeaders, HttpClientModule, HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Secteur } from '../interfaces/Secteur';
 
-export interface SecteurResponse {
-	results?: Secteur[]; 
+export interface EmployeResponse {
+	results?: Employe[]; 
 }
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
@@ -25,14 +25,14 @@ const httpOptions = {
 })
 
 
-export class ServiceSecteurService {
+export class ServiceEmployeService {
 
 
   constructor(private http: HttpClient) { }
 
-  addSecteur(secteur: any)  {
-    this.http.post("/addsecteur",secteur,httpOptions).subscribe(res => {     
-      console.log(secteur);
+  addEmploye(employe: any)  {
+    this.http.post("/addEmploye",employe,httpOptions).subscribe(res => {     
+      console.log(employe);
     },
     (err: HttpErrorResponse) => {
           if (err.error instanceof Error) {		 
@@ -46,7 +46,7 @@ export class ServiceSecteurService {
  }
 
  getAll(): Observable<any> {
-  return this.http.get("/Secteurs")
+  return this.http.get("/Employes")
 }
 
 }
