@@ -3,12 +3,12 @@
     <form [formGroup]="addForm" (ngSubmit)="onFormSubmit()">
         <mat-form-field style="width:300px" appearance="fill">
         <mat-label>Nom du secteur</mat-label>
-        <input matInput>
+        <input matInput formControlName="nom">
         </mat-form-field>
         <br>
         <mat-form-field style="width:300px" appearance="fill">
             <mat-label>Localisation dans l'aquarium</mat-label>
-            <input matInput>
+            <input matInput formControlName = "localisationDansAquarium" >
         </mat-form-field>
         <br>
         <button mat-stroked-button>Ajouter</button>

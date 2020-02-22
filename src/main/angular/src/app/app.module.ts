@@ -57,6 +57,7 @@ import { VisiteFormComponent } from './visiteur/visite-form/visite-form.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddSecteurComponent } from './secteur/add-secteur/add-secteur.component';
+import { AddActiviteComponent } from './activite/add-activite/add-activite.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { AddSecteurComponent } from './secteur/add-secteur/add-secteur.component
     LoginComponent,
     AddAnimalComponent,
     VisiteFormComponent,
-    AddSecteurComponent
+    AddSecteurComponent,
+    AddActiviteComponent
   ],
   imports: [
     BrowserModule,
