@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div align=\"center\">\n        <h2>Form add animal</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Nom</mat-label>\n      <input matInput formControlName=\"nom\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Sexe</mat-label>\n            <mat-select formControlName=\"sexe\">\n              <mat-option value=\"option\">Male</mat-option>\n              <mat-option value=\"option\">Femelle</mat-option>\n            </mat-select>\n          </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Signe distinctif</mat-label>\n            <input matInput formControlName=\"signeDistinctif\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Date d'arrivee</mat-label>\n        <input matInput [matDatepicker]=\"dateArrivee\" formControlName=\"dateArrivee\">\n        <mat-datepicker-toggle matSuffix [for]=\"dateArrivee\"></mat-datepicker-toggle>\n        <mat-datepicker #dateArrivee></mat-datepicker>\n      </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Date de depart possible</mat-label>\n            <input matInput [matDatepicker]=\"dateDepart\" formControlName=\"dateDepartPossible\">\n            <mat-datepicker-toggle matSuffix [for]=\"dateDepart\"></mat-datepicker-toggle>\n            <mat-datepicker #dateDepart></mat-datepicker>\n          </mat-form-field>\n        <br>\n\n    <br>\n    <mat-form-field appearance=\"fill\" >\n      <mat-label>Espece</mat-label>\n      <mat-select name=\"idEspece\" formControlName=\"idEspece\">\n        <mat-option value=\"1\">Espece1</mat-option>\n        <mat-option value=\"2\">Espece2</mat-option>\n        <mat-option value=\"3\">Espece3</mat-option>\n      </mat-select>\n    </mat-form-field>\n  <br>\n\n\n    <mat-form-field appearance=\"fill\" >\n        <mat-label>Bassin</mat-label>\n        <mat-select name=\"idBassin\" formControlName=\"idBassin\">\n          <mat-option value=\"1\">Bassin1</mat-option>\n          <mat-option value=\"2\">Bassin2</mat-option>\n          <mat-option value=\"3\">Bassin3</mat-option>\n        </mat-select>\n      </mat-form-field>\n    <br>\n    <button mat-stroked-button>Ajouter</button>\n  </form>\n  </div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div align=\"center\">\n        <h2>Form add animal</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Nom</mat-label>\n      <input matInput formControlName=\"nom\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Sexe</mat-label>\n            <mat-select formControlName=\"sexe\">\n              <mat-option value=\"option\">Male</mat-option>\n              <mat-option value=\"option\">Femelle</mat-option>\n            </mat-select>\n          </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Signe distinctif</mat-label>\n            <input matInput formControlName=\"signeDistinctif\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Date d'arrivee</mat-label>\n        <input matInput [matDatepicker]=\"dateArrivee\" formControlName=\"dateArrivee\">\n        <mat-datepicker-toggle matSuffix [for]=\"dateArrivee\"></mat-datepicker-toggle>\n        <mat-datepicker #dateArrivee></mat-datepicker>\n      </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Date de depart possible</mat-label>\n            <input matInput [matDatepicker]=\"dateDepart\" formControlName=\"dateDepartPossible\">\n            <mat-datepicker-toggle matSuffix [for]=\"dateDepart\"></mat-datepicker-toggle>\n            <mat-datepicker #dateDepart></mat-datepicker>\n          </mat-form-field>\n        <br>\n\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n      <mat-label>Espece</mat-label>\n      <mat-select name=\"idEspece\" formControlName=\"idEspece\">\n        <mat-option value=\"1\">Espece1</mat-option>\n        <mat-option value=\"2\">Espece2</mat-option>\n        <mat-option value=\"3\">Espece3</mat-option>\n      </mat-select>\n    </mat-form-field>\n  <br>\n\n\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n        <mat-label>Bassin</mat-label>\n        <mat-select name=\"idBassin\" formControlName=\"idBassin\">\n          <mat-option value=\"1\">Bassin1</mat-option>\n          <mat-option value=\"2\">Bassin2</mat-option>\n          <mat-option value=\"3\">Bassin3</mat-option>\n        </mat-select>\n      </mat-form-field>\n    <br>\n    <button mat-stroked-button>Ajouter</button>\n  </form>\n  </div>\n\n");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("iugiugiugiu\n<app-visite-form></app-visite-form>\n<app-add-animal></app-add-animal>\n<app-login></app-login>\n<app-add-employe></app-add-employe>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("iugiugiugiu\n<app-visite-form></app-visite-form>\n<app-add-animal></app-add-animal>\n<app-add-secteur></app-add-secteur>\n<app-login></app-login>\n<app-add-employe></app-add-employe>\n");
 
 /***/ }),
 
@@ -85,6 +85,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #drawer class=\"sidenav\" fixedInViewport\n      [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n      [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n      [opened]=\"(isHandset$ | async) === false\">\n    <mat-toolbar>Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item href=\"#\">Link 1</a>\n      <a mat-list-item href=\"#\">Link 2</a>\n      <a mat-list-item href=\"#\">Link 3</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span>TestAngular</span>\n    </mat-toolbar>\n  \n\n\n\n\n    <mat-form-field>\n      <mat-label>Choose a date</mat-label>\n      <input matInput [matDatepicker]=\"picker\">\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n      <mat-datepicker #picker></mat-datepicker>\n    </mat-form-field>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/secteur/add-secteur/add-secteur.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/secteur/add-secteur/add-secteur.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div align=\"center\">\n    <h2>Add Secteur Form</h2>\n<mat-form-field style=\"width:300px\" appearance=\"fill\">\n  <mat-label>Nom du secteur</mat-label>\n  <input matInput>\n</mat-form-field>\n<br>\n<mat-form-field style=\"width:300px\" appearance=\"fill\">\n    <mat-label>Localisation dans l'aquarium</mat-label>\n    <input matInput>\n</mat-form-field>\n<br>\n<button mat-stroked-button>Ajouter</button>\n</div>");
 
 /***/ }),
 
@@ -426,7 +439,6 @@ let ServiceAnimalService = class ServiceAnimalService {
         this.http = http;
     }
     addAnimal(animal) {
-        console.log(animal);
         this.http.post("/addanimal", animal, httpOptions).subscribe(res => {
             console.log(animal);
         }, (err) => {
@@ -601,6 +613,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./visiteur/visite-form/visite-form.component */ "./src/app/visiteur/visite-form/visite-form.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./secteur/add-secteur/add-secteur.component */ "./src/app/secteur/add-secteur/add-secteur.component.ts");
+
 
 
 
@@ -667,7 +681,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_50__["AddEmployeComponent"],
             _login_login_login_component__WEBPACK_IMPORTED_MODULE_51__["LoginComponent"],
             _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_52__["AddAnimalComponent"],
-            _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__["VisiteFormComponent"]
+            _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__["VisiteFormComponent"],
+            _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__["AddSecteurComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -875,6 +890,50 @@ MyNavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./my-nav.component.css */ "./src/app/my-nav/my-nav.component.css")).default]
     })
 ], MyNavComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/secteur/add-secteur/add-secteur.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/secteur/add-secteur/add-secteur.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NlY3RldXIvYWRkLXNlY3RldXIvYWRkLXNlY3RldXIuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/secteur/add-secteur/add-secteur.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/secteur/add-secteur/add-secteur.component.ts ***!
+  \**************************************************************/
+/*! exports provided: AddSecteurComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddSecteurComponent", function() { return AddSecteurComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AddSecteurComponent = class AddSecteurComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+AddSecteurComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-add-secteur',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-secteur.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/secteur/add-secteur/add-secteur.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-secteur.component.css */ "./src/app/secteur/add-secteur/add-secteur.component.css")).default]
+    })
+], AddSecteurComponent);
 
 
 

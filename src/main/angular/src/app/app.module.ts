@@ -56,6 +56,7 @@ import { AddAnimalComponent } from './animal/add-animal/add-animal.component';
 import { VisiteFormComponent } from './visiteur/visite-form/visite-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddSecteurComponent } from './secteur/add-secteur/add-secteur.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddEmployeComponent,
     LoginComponent,
     AddAnimalComponent,
-    VisiteFormComponent
+    VisiteFormComponent,
+    AddSecteurComponent
   ],
   imports: [
     BrowserModule,
