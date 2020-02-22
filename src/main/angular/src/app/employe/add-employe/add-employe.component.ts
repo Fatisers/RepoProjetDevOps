@@ -23,8 +23,7 @@ export class AddEmployeComponent implements OnInit {
     adresse:'',
     dateDeNaissance: '',
     numSecuSociale: '',
-    role : '' ,
-    listebassins : ''
+    role : '' 
 
   });
 

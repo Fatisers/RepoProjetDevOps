@@ -1,5 +1,6 @@
 package com.upem.devops.ProjectAquarium.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -42,6 +43,19 @@ public class Employe {
 		this.numSecuSociale = numSecuSociale;
 		this.role = role;
 		this.listebassins = listebassins;
+	}
+
+	public Employe(int idEmploye, String nom, String identifiant, String motdepasse, String prenom, String adresse, String dateDeNaissance, String numSecuSociale, String role) {
+		this.idEmploye = idEmploye;
+		this.nom = nom;
+		this.identifiant = identifiant;
+		this.motdepasse = motdepasse;
+		this.prenom = prenom;
+		this.adresse = adresse;
+		this.dateDeNaissance = dateDeNaissance;
+		this.numSecuSociale = numSecuSociale;
+		this.role = role;
+		this.listebassins = new ArrayList<>();
 	}
 
 	public int getIdEmploye() {
@@ -122,6 +136,10 @@ public class Employe {
 
 	public void setListebassins(List<Bassin> listebassins) {
 		this.listebassins = listebassins;
+	}
+
+	public void addBassin(Bassin b){
+		this.listebassins.add(b);
 	}
 
 	@Override

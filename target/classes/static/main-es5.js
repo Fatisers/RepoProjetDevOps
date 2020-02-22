@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "iugiugiugiu\n<app-visite-form></app-visite-form>\n<app-add-animal></app-add-animal>\n<app-add-secteur></app-add-secteur>\n<app-login></app-login>\n<app-add-employe></app-add-employe>\n";
+    __webpack_exports__["default"] = "\n<app-add-employe></app-add-employe>\n\n";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Form add employe</h2>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Nom</mat-label>\n      <input matInput>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Prénom</mat-label>\n        <input matInput>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Date de naissance</mat-label>\n        <input matInput [matDatepicker]=\"picker\">\n        <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n        <mat-datepicker #picker></mat-datepicker>\n      </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Identifiant</mat-label>\n        <input matInput>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Mot de passe</mat-label>\n        <input matInput>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Role</mat-label>\n      <mat-select>\n        <mat-option value=\"option\">Gestionnaire de l'aquarium</mat-option>\n        <mat-option value=\"option\">Employe</mat-option>\n      </mat-select>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Adresse</mat-label>\n      <textarea matInput></textarea>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n        <mat-label>Numéro de sécurité sociale</mat-label>\n        <input matInput>\n    </mat-form-field>\n    <br>\n    <button mat-stroked-button>Ajouter</button>\n\n  </div>\n";
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Form add employe</h2>\n        <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom</mat-label>\n            <input matInput formControlName=\"nom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Prénom</mat-label>\n              <input matInput formControlName=\"prenom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Date de naissance</mat-label>\n              <input matInput [matDatepicker]=\"picker\" formControlName=\"dateDeNaissance\">\n              <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n              <mat-datepicker #picker></mat-datepicker>\n            </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Identifiant</mat-label>\n              <input matInput formControlName=\"identifiant\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Mot de passe</mat-label>\n              <input matInput formControlName=\"motdepasse\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Role</mat-label>\n            <mat-select formControlName=\"role\">\n              <mat-option value=\"option\">Gestionnaire de l'aquarium</mat-option>\n              <mat-option value=\"option\">Employe</mat-option>\n            </mat-select>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Adresse</mat-label>\n            <textarea matInput formControlName=\"adresse\"></textarea>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n              <mat-label>Numéro de sécurité sociale</mat-label>\n              <input matInput formControlName=\"numSecuSociale\">\n          </mat-form-field>\n          <br>\n          <button mat-stroked-button>Ajouter</button>\n        </form>\n  </div>\n";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Add Secteur Form</h2>\n<mat-form-field style=\"width:300px\" appearance=\"fill\">\n  <mat-label>Nom du secteur</mat-label>\n  <input matInput>\n</mat-form-field>\n<br>\n<mat-form-field style=\"width:300px\" appearance=\"fill\">\n    <mat-label>Localisation dans l'aquarium</mat-label>\n    <input matInput>\n</mat-form-field>\n<br>\n<button mat-stroked-button>Ajouter</button>\n</div>";
+    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Add Secteur Form</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Nom du secteur</mat-label>\n        <input matInput>\n        </mat-form-field>\n        <br>\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Localisation dans l'aquarium</mat-label>\n            <input matInput>\n        </mat-form-field>\n        <br>\n        <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>";
     /***/
   },
 
@@ -1490,21 +1490,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _service_employe_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../service-employe.service */
+    "./src/app/employe/service-employe.service.ts");
 
     var AddEmployeComponent =
     /*#__PURE__*/
     function () {
-      function AddEmployeComponent() {
+      function AddEmployeComponent(ngZone, formBuilder, service) {
         _classCallCheck(this, AddEmployeComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.addForm = this.formBuilder.group({
+          nom: '',
+          identifiant: '',
+          motdepasse: '',
+          prenom: '',
+          adresse: '',
+          dateDeNaissance: '',
+          numSecuSociale: '',
+          role: ''
+        });
       }
 
       _createClass(AddEmployeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          this.service.addEmploye(this.addForm.value);
+        }
       }]);
 
       return AddEmployeComponent;
     }();
+
+    AddEmployeComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: _service_employe_service__WEBPACK_IMPORTED_MODULE_3__["ServiceEmployeService"]
+      }];
+    };
 
     AddEmployeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-add-employe',
@@ -1515,6 +1556,97 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./add-employe.component.css */
       "./src/app/employe/add-employe/add-employe.component.css")).default]
     })], AddEmployeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/employe/service-employe.service.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/employe/service-employe.service.ts ***!
+    \****************************************************/
+
+  /*! exports provided: ServiceEmployeService */
+
+  /***/
+  function srcAppEmployeServiceEmployeServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ServiceEmployeService", function () {
+      return ServiceEmployeService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    var ServiceEmployeService =
+    /*#__PURE__*/
+    function () {
+      function ServiceEmployeService(http) {
+        _classCallCheck(this, ServiceEmployeService);
+
+        this.http = http;
+      }
+
+      _createClass(ServiceEmployeService, [{
+        key: "addEmploye",
+        value: function addEmploye(employe) {
+          this.http.post("/addEmploye", employe, httpOptions).subscribe(function (res) {
+            console.log(employe);
+          }, function (err) {
+            if (err.error instanceof Error) {
+              console.log('An error occurred:', err.error.message);
+            } else {
+              console.log('Backend returned status code: ', err.status);
+              console.log('Response body:', err.error);
+            }
+          });
+        }
+      }, {
+        key: "getAll",
+        value: function getAll() {
+          return this.http.get("/Employes");
+        }
+      }]);
+
+      return ServiceEmployeService;
+    }();
+
+    ServiceEmployeService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    ServiceEmployeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
+    })], ServiceEmployeService);
     /***/
   },
 
@@ -1739,21 +1871,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _service_secteur_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../service-secteur.service */
+    "./src/app/secteur/service-secteur.service.ts");
 
     var AddSecteurComponent =
     /*#__PURE__*/
     function () {
-      function AddSecteurComponent() {
+      function AddSecteurComponent(ngZone, formBuilder, service) {
         _classCallCheck(this, AddSecteurComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.addForm = this.formBuilder.group({
+          nom: '',
+          localisationDansAquarium: ''
+        });
       }
 
       _createClass(AddSecteurComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          this.service.addSecteur(this.addForm.value);
+        }
       }]);
 
       return AddSecteurComponent;
     }();
+
+    AddSecteurComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: _service_secteur_service__WEBPACK_IMPORTED_MODULE_3__["ServiceSecteurService"]
+      }];
+    };
 
     AddSecteurComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-add-secteur',
@@ -1764,6 +1931,97 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./add-secteur.component.css */
       "./src/app/secteur/add-secteur/add-secteur.component.css")).default]
     })], AddSecteurComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/secteur/service-secteur.service.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/secteur/service-secteur.service.ts ***!
+    \****************************************************/
+
+  /*! exports provided: ServiceSecteurService */
+
+  /***/
+  function srcAppSecteurServiceSecteurServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ServiceSecteurService", function () {
+      return ServiceSecteurService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    var ServiceSecteurService =
+    /*#__PURE__*/
+    function () {
+      function ServiceSecteurService(http) {
+        _classCallCheck(this, ServiceSecteurService);
+
+        this.http = http;
+      }
+
+      _createClass(ServiceSecteurService, [{
+        key: "addSecteur",
+        value: function addSecteur(secteur) {
+          this.http.post("/addsecteur", secteur, httpOptions).subscribe(function (res) {
+            console.log(secteur);
+          }, function (err) {
+            if (err.error instanceof Error) {
+              console.log('An error occurred:', err.error.message);
+            } else {
+              console.log('Backend returned status code: ', err.status);
+              console.log('Response body:', err.error);
+            }
+          });
+        }
+      }, {
+        key: "getAll",
+        value: function getAll() {
+          return this.http.get("/Secteurs");
+        }
+      }]);
+
+      return ServiceSecteurService;
+    }();
+
+    ServiceSecteurService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    ServiceSecteurService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
+    })], ServiceSecteurService);
     /***/
   },
 

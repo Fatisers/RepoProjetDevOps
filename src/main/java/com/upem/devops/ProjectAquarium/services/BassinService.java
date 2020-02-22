@@ -4,6 +4,7 @@ import com.upem.devops.ProjectAquarium.models.Bassin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 /**
@@ -14,6 +15,14 @@ import java.util.List;
 public class BassinService {
     @Autowired
     private BassinRepository bassins;
+
+    @PostConstruct
+    public void init(){
+        Bassin b1 = new Bassin(1,24,7,"propre",1,1);
+        Bassin b2 = new Bassin(2,21,7,"propre",1,2);
+        addBassin(b1);
+        addBassin(b2);
+    }
 
 
     public Iterable<Bassin> getBassins() {
