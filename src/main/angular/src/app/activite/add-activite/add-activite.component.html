@@ -1,1 +1,40 @@
-<p>add-activite works!</p>
+
+<div align="center">
+    <h2>Form add Activite</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onFormSubmit()">
+            <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Nom de l'activite</mat-label>
+            <input matInput formControlName="nom">
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:300px" appearance="fill">
+                <mat-label>Jour </mat-label>
+                <input matInput [matDatepicker]="jour" formControlName="jour">
+                <mat-datepicker-toggle matSuffix [for]="jour"></mat-datepicker-toggle>
+                <mat-datepicker #dateArrivee></mat-datepicker>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:300px" appearance="fill">
+                <mat-label>Heure de debut</mat-label>
+                <input matInput [ngxTimepicker]="endTime" [format]="24"  placeholder="{{placeholderTime}}" formControlName="heureDebut" />
+            </mat-form-field>
+            <ngx-material-timepicker #endTime (timeSet)="timeChange($event)" [minutesGap]="10"></ngx-material-timepicker>
+            <br>
+            <mat-form-field style="width:300px" appearance="fill">
+                <mat-label>Heure de fin</mat-label>
+                <input matInput [ngxTimepicker]="endTime" [format]="24"  placeholder="{{placeholderTime}}" formControlName="heureFin" />
+            </mat-form-field>
+            <ngx-material-timepicker #endTime (timeSet)="timeChange($event)" [minutesGap]="10"></ngx-material-timepicker>
+
+            <br>
+            <mat-form-field style="width:300px" appearance="fill" >
+            <mat-label>Type d'activite</mat-label>
+            <mat-select name="publiqueOuPrivee" formControlName="publiqueOuPrivee">
+                <mat-option value="1">Publique</mat-option>
+                <mat-option value="2">Privee</mat-option>
+            </mat-select>
+            </mat-form-field>
+
+            <button mat-stroked-button>Ajouter</button>
+    </form>
+</div>
