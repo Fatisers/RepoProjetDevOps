@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import java.util.StringTokenizer;
 
 @Entity
 public class Activite {
@@ -49,7 +50,13 @@ public class Activite {
 	}
 
 	public void setJour(String jour) {
-		this.jour = jour;
+		StringTokenizer st = new StringTokenizer(jour,"-");
+		String year = st.nextToken();
+		String month = st.nextToken();
+		char[] d= st.nextToken().toCharArray();
+		String day = d[0]+""+d[1];
+		String result = day+"/"+month+"/"+year;
+		this.jour = result;
 	}
 
 	public String getNom() {
@@ -99,6 +106,8 @@ public class Activite {
 	public void setIdEmploye(int idEmploye) {
 		this.idEmploye = idEmploye;
 	}
+
+
 
 	@Override
 	public String toString() {

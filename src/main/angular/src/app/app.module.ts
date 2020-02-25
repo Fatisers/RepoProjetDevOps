@@ -14,6 +14,8 @@ import { MatListModule } from '@angular/material/list';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 
 
+
+
 import { MatSliderModule } from '@angular/material/slider';
 import {A11yModule} from '@angular/cdk/a11y';
 import {DragDropModule} from '@angular/cdk/drag-drop';
@@ -58,6 +60,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddSecteurComponent } from './secteur/add-secteur/add-secteur.component';
 import { AddActiviteComponent } from './activite/add-activite/add-activite.component';
+import { ShowActiviteComponent } from './activite/show-activite/show-activite.component';
+import { MenuComponent } from './menu/menu/menu.component';
 
 
 @NgModule({
@@ -69,7 +73,9 @@ import { AddActiviteComponent } from './activite/add-activite/add-activite.compo
     AddAnimalComponent,
     VisiteFormComponent,
     AddSecteurComponent,
-    AddActiviteComponent
+    AddActiviteComponent,
+    ShowActiviteComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -7,11 +7,22 @@ import org.springframework.stereotype.Service;
 
 import com.upem.devops.ProjectAquarium.models.Animal;
 
+import javax.annotation.PostConstruct;
+
 @Service
 public class AnimalService {
 	
 	@Autowired
     private AnimalRepository animaux;
+
+    @PostConstruct
+    public void init(){
+        Animal a1 = new Animal(1,"Requin","Male","Cancer","01/01/2020","02/02/2020",1,1);
+        Animal a2 = new Animal(2,"Requin","Femelle","Cancer","13/03/2020","02/02/2020",2,2);
+
+        addAnimal(a1);
+        addAnimal(a2);
+    }
 	
 	
 	public Iterable<Animal> getAnimaux() {

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { ServiceActiviteService } from '../service-activite.service';
 
 @Component({
   selector: 'app-add-activite',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddActiviteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngZone: NgZone,
+    private formBuilder: FormBuilder,
+    private service: ServiceActiviteService) { }
 
   ngOnInit() {
   }
 
+  addForm = this.formBuilder.group({
+    nom: '',
+    jour: '',
+    heureDebut:'',
+    dateArrivee: '',
+    heureFin:'',
+    publiqueOuPrivee: '',
+    idBassin: '',
+    idEmploye: ''
+
+  });
+
+  onFormSubmit() {
+    this.service.addActivite(this.addForm.value);
+  }
 }

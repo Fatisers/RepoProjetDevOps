@@ -36,6 +36,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/activite/add-activite/add-activite.component.html":
+  /*!*********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/activite/add-activite/add-activite.component.html ***!
+    \*********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppActiviteAddActiviteAddActiviteComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n    <h2>Form add Activite</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom de l'activite</mat-label>\n            <input matInput formControlName=\"nom\">\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Jour </mat-label>\n                <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                <mat-datepicker #jour></mat-datepicker>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de debut</mat-label>\n                <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de fin</mat-label>\n                <input matInput [ngxTimepicker]=\"heureFin\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureFin\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureFin (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Type d'activite</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"publiqueOuPrivee\">\n                <mat-option value=\"1\">Publique</mat-option>\n                <mat-option value=\"2\">Privee</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Bassin</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idBassin\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Employe</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idEmploye\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n\n            <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/activite/show-activite/show-activite.component.html":
+  /*!***********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/activite/show-activite/show-activite.component.html ***!
+    \***********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppActiviteShowActiviteShowActiviteComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<h2>Liste des activites</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n        <!-- Position Column -->\n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> jour </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n        <!-- Name Column -->\n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> nom </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n        <!-- Weight Column -->\n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> heureDebut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n                <!-- Symbol Column -->\n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> heureFin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        <!-- Symbol Column -->\n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> publiqueOuPrivee </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n      </mat-table>\n\n      <ul>\n            <li *ngFor=\"let item of activites\">\n                {{ item.idActivite }} :  {{ item.nom }}\n            </li>\n        </ul>\n        ======";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/animal/add-animal/add-animal.component.html":
   /*!***************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/animal/add-animal/add-animal.component.html ***!
@@ -71,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<app-add-employe></app-add-employe>\n\n";
+    __webpack_exports__["default"] = "\n<app-menu></app-menu>\n";
     /***/
   },
 
@@ -116,6 +156,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/menu/menu.component.html":
+  /*!*************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/menu/menu/menu.component.html ***!
+    \*************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppMenuMenuMenuComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<h1>Aquarium</h1>\n<nav>\n  <ul>\n    <li><a routerLink=\"/addActivite\" routerLinkActive=\"active\">Ajouter Activites</a></li>\n    <li><a routerLink=\"/showActivite\" routerLinkActive=\"active\"> Liste Activites</a></li>\n    <li><a href=\"#\">Especes</a></li>\n    <li><a href=\"#\">Bassins</a></li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/my-nav/my-nav.component.html":
   /*!************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/my-nav/my-nav.component.html ***!
@@ -151,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Add Secteur Form</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Nom du secteur</mat-label>\n        <input matInput>\n        </mat-form-field>\n        <br>\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Localisation dans l'aquarium</mat-label>\n            <input matInput>\n        </mat-form-field>\n        <br>\n        <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>";
+    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Add Secteur Form</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Nom du secteur</mat-label>\n        <input matInput formControlName=\"nom\">\n        </mat-form-field>\n        <br>\n        <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Localisation dans l'aquarium</mat-label>\n            <input matInput formControlName = \"localisationDansAquarium\" >\n        </mat-form-field>\n        <br>\n        <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>";
     /***/
   },
 
@@ -734,6 +794,326 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/activite/add-activite/add-activite.component.css":
+  /*!******************************************************************!*\
+    !*** ./src/app/activite/add-activite/add-activite.component.css ***!
+    \******************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppActiviteAddActiviteAddActiviteComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjdGl2aXRlL2FkZC1hY3Rpdml0ZS9hZGQtYWN0aXZpdGUuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/activite/add-activite/add-activite.component.ts":
+  /*!*****************************************************************!*\
+    !*** ./src/app/activite/add-activite/add-activite.component.ts ***!
+    \*****************************************************************/
+
+  /*! exports provided: AddActiviteComponent */
+
+  /***/
+  function srcAppActiviteAddActiviteAddActiviteComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddActiviteComponent", function () {
+      return AddActiviteComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _service_activite_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../service-activite.service */
+    "./src/app/activite/service-activite.service.ts");
+
+    var AddActiviteComponent =
+    /*#__PURE__*/
+    function () {
+      function AddActiviteComponent(ngZone, formBuilder, service) {
+        _classCallCheck(this, AddActiviteComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.addForm = this.formBuilder.group({
+          nom: '',
+          jour: '',
+          heureDebut: '',
+          dateArrivee: '',
+          heureFin: '',
+          publiqueOuPrivee: '',
+          idBassin: '',
+          idEmploye: ''
+        });
+      }
+
+      _createClass(AddActiviteComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          this.service.addActivite(this.addForm.value);
+        }
+      }]);
+
+      return AddActiviteComponent;
+    }();
+
+    AddActiviteComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: _service_activite_service__WEBPACK_IMPORTED_MODULE_3__["ServiceActiviteService"]
+      }];
+    };
+
+    AddActiviteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-add-activite',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./add-activite.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/activite/add-activite/add-activite.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./add-activite.component.css */
+      "./src/app/activite/add-activite/add-activite.component.css")).default]
+    })], AddActiviteComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/activite/service-activite.service.ts":
+  /*!******************************************************!*\
+    !*** ./src/app/activite/service-activite.service.ts ***!
+    \******************************************************/
+
+  /*! exports provided: ServiceActiviteService */
+
+  /***/
+  function srcAppActiviteServiceActiviteServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ServiceActiviteService", function () {
+      return ServiceActiviteService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    var ServiceActiviteService =
+    /*#__PURE__*/
+    function () {
+      function ServiceActiviteService(http) {
+        _classCallCheck(this, ServiceActiviteService);
+
+        this.http = http;
+      }
+
+      _createClass(ServiceActiviteService, [{
+        key: "addActivite",
+        value: function addActivite(activite) {
+          this.http.post("/addactivite", activite, httpOptions).subscribe(function (res) {
+            console.log(activite);
+          }, function (err) {
+            if (err.error instanceof Error) {
+              console.log('An error occurred:', err.error.message);
+            } else {
+              console.log('Backend returned status code: ', err.status);
+              console.log('Response body:', err.error);
+            }
+          });
+        }
+      }, {
+        key: "getAll",
+        value: function getAll() {
+          return this.http.get("/activites");
+        }
+      }]);
+
+      return ServiceActiviteService;
+    }();
+
+    ServiceActiviteService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    ServiceActiviteService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
+    })], ServiceActiviteService);
+    /***/
+  },
+
+  /***/
+  "./src/app/activite/show-activite/show-activite.component.css":
+  /*!********************************************************************!*\
+    !*** ./src/app/activite/show-activite/show-activite.component.css ***!
+    \********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppActiviteShowActiviteShowActiviteComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "table {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWN0aXZpdGUvc2hvdy1hY3Rpdml0ZS9zaG93LWFjdGl2aXRlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9hY3Rpdml0ZS9zaG93LWFjdGl2aXRlL3Nob3ctYWN0aXZpdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/activite/show-activite/show-activite.component.ts":
+  /*!*******************************************************************!*\
+    !*** ./src/app/activite/show-activite/show-activite.component.ts ***!
+    \*******************************************************************/
+
+  /*! exports provided: ShowActiviteComponent */
+
+  /***/
+  function srcAppActiviteShowActiviteShowActiviteComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ShowActiviteComponent", function () {
+      return ShowActiviteComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _service_activite_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../service-activite.service */
+    "./src/app/activite/service-activite.service.ts");
+
+    var ShowActiviteComponent =
+    /*#__PURE__*/
+    function () {
+      function ShowActiviteComponent(service) {
+        var _this = this;
+
+        _classCallCheck(this, ShowActiviteComponent);
+
+        this.service = service;
+        this.displayedColumns = ['jour', 'nom', 'heureDebut', 'heureFin', 'publiqueOuPrivee'];
+        this.service.getAll().subscribe(function (data) {
+          return _this.activites = data;
+        }, function (error) {
+          return console.log("Erreur " + error);
+        });
+      }
+
+      _createClass(ShowActiviteComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.service.getAll().subscribe(function (data) {
+            return _this2.activites = data;
+          }, function (error) {
+            return console.log("Erreur " + error);
+          });
+        }
+      }]);
+
+      return ShowActiviteComponent;
+    }();
+
+    ShowActiviteComponent.ctorParameters = function () {
+      return [{
+        type: _service_activite_service__WEBPACK_IMPORTED_MODULE_2__["ServiceActiviteService"]
+      }];
+    };
+
+    ShowActiviteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-show-activite',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./show-activite.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/activite/show-activite/show-activite.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./show-activite.component.css */
+      "./src/app/activite/show-activite/show-activite.component.css")).default]
+    })], ShowActiviteComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/animal/add-animal/add-animal.component.css":
   /*!************************************************************!*\
     !*** ./src/app/animal/add-animal/add-animal.component.css ***!
@@ -980,8 +1360,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
 
-    var routes = [];
+
+    var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./activite/add-activite/add-activite.component */
+    "./src/app/activite/add-activite/add-activite.component.ts");
+    /* harmony import */
+
+
+    var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./activite/show-activite/show-activite.component */
+    "./src/app/activite/show-activite/show-activite.component.ts");
+
+    var routes = [{
+      path: 'addActivite',
+      component: _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__["AddActiviteComponent"]
+    }, {
+      path: 'showActivite',
+      component: _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_4__["ShowActiviteComponent"]
+    }, {
+      path: '',
+      redirectTo: '/addActivite',
+      pathMatch: 'full'
+    }, {
+      path: '**',
+      component: _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__["AddActiviteComponent"]
+    }];
 
     var AppRoutingModule = function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
@@ -990,7 +1395,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
       exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-    })], AppRoutingModule);
+    })], AppRoutingModule); //  { path: '**', component: PageNotFoundComponent}
+
     /***/
   },
 
@@ -1425,13 +1831,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(
     /*! ./secteur/add-secteur/add-secteur.component */
     "./src/app/secteur/add-secteur/add-secteur.component.ts");
+    /* harmony import */
+
+
+    var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(
+    /*! ./activite/add-activite/add-activite.component */
+    "./src/app/activite/add-activite/add-activite.component.ts");
+    /* harmony import */
+
+
+    var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
+    /*! ./activite/show-activite/show-activite.component */
+    "./src/app/activite/show-activite/show-activite.component.ts");
+    /* harmony import */
+
+
+    var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(
+    /*! ./menu/menu/menu.component */
+    "./src/app/menu/menu/menu.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _my_nav_my_nav_component__WEBPACK_IMPORTED_MODULE_6__["MyNavComponent"], _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_50__["AddEmployeComponent"], _login_login_login_component__WEBPACK_IMPORTED_MODULE_51__["LoginComponent"], _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_52__["AddAnimalComponent"], _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__["VisiteFormComponent"], _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__["AddSecteurComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _my_nav_my_nav_component__WEBPACK_IMPORTED_MODULE_6__["MyNavComponent"], _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_50__["AddEmployeComponent"], _login_login_login_component__WEBPACK_IMPORTED_MODULE_51__["LoginComponent"], _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_52__["AddAnimalComponent"], _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__["VisiteFormComponent"], _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__["AddSecteurComponent"], _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__["AddActiviteComponent"], _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__["ShowActiviteComponent"], _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__["MenuComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_7__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_7__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_15__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_19__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_20__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_21__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_22__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_23__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_24__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_25__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_26__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_27__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_28__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_29__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_30__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_32__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_33__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_34__["MatGridListModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_35__["MatInputModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_36__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_37__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_38__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_39__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_40__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_41__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_37__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_42__["MatSelectModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_43__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_44__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_45__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_46__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_47__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_48__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_49__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"], ngx_material_timepicker__WEBPACK_IMPORTED_MODULE_13__["NgxMaterialTimepickerModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_54__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_55__["ReactiveFormsModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -1726,6 +2150,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./login.component.css */
       "./src/app/login/login/login.component.css")).default]
     })], LoginComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/menu/menu/menu.component.css":
+  /*!**********************************************!*\
+    !*** ./src/app/menu/menu/menu.component.css ***!
+    \**********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppMenuMenuMenuComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "*{\n    margin: 0px;\n    padding: 0px;\n    font-family: Avenir, sans-serif;\n}\n\nnav{\n    width: 100%;\n    margin: 0px auto 40px auto;\n    background-color: white;\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0px;\n}\n\nnav ul{\n    list-style-type: none;\n}\n\nnav li{\n    float: left;\n    width: 25%;/*100% divisé par le nombre d'éléments de menu*/\n    text-align: center;/*Centre le texte dans les éléments de menu*/\n}\n\n/*Evite que le menu n'ait une hauteur nulle*/\n\nnav ul::after{\n    content: \"\";\n    display: table;\n    clear: both;\n}\n\nnav a{\n    display: block; /*Toute la surface sera cliquable*/\n    text-decoration: none;\n    color: black;\n    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/\n    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/\n}\n\nnav a:hover{\n    color: orange;\n    border-bottom: 2px solid gold;\n}\n\n.conteneur{\n  margin: 0px 20px;\n  height: 1500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWVudS9tZW51L21lbnUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osK0JBQStCO0FBQ25DOztBQUVBO0lBQ0ksV0FBVztJQUNYLDBCQUEwQjtJQUMxQix1QkFBdUI7SUFDdkIsd0JBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixRQUFRO0FBQ1o7O0FBRUE7SUFDSSxxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsVUFBVSxDQUFDLCtDQUErQztJQUMxRCxrQkFBa0IsQ0FBQyw0Q0FBNEM7QUFDbkU7O0FBRUEsNENBQTRDOztBQUM1QztJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QsV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYyxFQUFFLGtDQUFrQztJQUNsRCxxQkFBcUI7SUFDckIsWUFBWTtJQUNaLG9DQUFvQyxDQUFDLDhFQUE4RTtJQUNuSCxpQkFBaUIsQ0FBQyxpREFBaUQ7QUFDdkU7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0FBQ2pDOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUvbWVudS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKntcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgZm9udC1mYW1pbHk6IEF2ZW5pciwgc2Fucy1zZXJpZjtcbn1cblxubmF2e1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbjogMHB4IGF1dG8gNDBweCBhdXRvO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBzdGlja3k7XG4gICAgdG9wOiAwcHg7XG59XG5cbm5hdiB1bHtcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG59XG5cbm5hdiBsaXtcbiAgICBmbG9hdDogbGVmdDtcbiAgICB3aWR0aDogMjUlOy8qMTAwJSBkaXZpc8OpIHBhciBsZSBub21icmUgZCfDqWzDqW1lbnRzIGRlIG1lbnUqL1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjsvKkNlbnRyZSBsZSB0ZXh0ZSBkYW5zIGxlcyDDqWzDqW1lbnRzIGRlIG1lbnUqL1xufVxuXG4vKkV2aXRlIHF1ZSBsZSBtZW51IG4nYWl0IHVuZSBoYXV0ZXVyIG51bGxlKi9cbm5hdiB1bDo6YWZ0ZXJ7XG4gICAgY29udGVudDogXCJcIjtcbiAgICBkaXNwbGF5OiB0YWJsZTtcbiAgICBjbGVhcjogYm90aDtcbn1cblxubmF2IGF7XG4gICAgZGlzcGxheTogYmxvY2s7IC8qVG91dGUgbGEgc3VyZmFjZSBzZXJhIGNsaXF1YWJsZSovXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgdHJhbnNwYXJlbnQ7LypFdml0ZSBsZSBkw6ljYWxhZ2UgZGVzIMOpbMOpbWVudHMgc291cyBsZSBtZW51IMOgIGNhdXNlIGRlIGxhIGJvcmR1cmUgZW4gOmhvdmVyKi9cbiAgICBwYWRkaW5nOiAxMHB4IDBweDsvKkFncmFuZGl0IGxlIG1lbnUgZXQgZXNwYWNlIGxhIGJvcmR1cmUgZHUgdGV4dGUqL1xufVxuXG5uYXYgYTpob3ZlcntcbiAgICBjb2xvcjogb3JhbmdlO1xuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCBnb2xkO1xufVxuXG4uY29udGVuZXVye1xuICBtYXJnaW46IDBweCAyMHB4O1xuICBoZWlnaHQ6IDE1MDBweDtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/menu/menu/menu.component.ts":
+  /*!*********************************************!*\
+    !*** ./src/app/menu/menu/menu.component.ts ***!
+    \*********************************************/
+
+  /*! exports provided: MenuComponent */
+
+  /***/
+  function srcAppMenuMenuMenuComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MenuComponent", function () {
+      return MenuComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var MenuComponent =
+    /*#__PURE__*/
+    function () {
+      function MenuComponent() {
+        _classCallCheck(this, MenuComponent);
+      }
+
+      _createClass(MenuComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return MenuComponent;
+    }();
+
+    MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-menu',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./menu.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/menu/menu.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./menu.component.css */
+      "./src/app/menu/menu/menu.component.css")).default]
+    })], MenuComponent);
     /***/
   },
 

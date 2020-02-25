@@ -5,6 +5,7 @@ import com.upem.devops.ProjectAquarium.models.Activite;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 /**
@@ -15,6 +16,15 @@ import java.util.List;
 public class ActiviteService {
     @Autowired
     private ActiviteRepository activites;
+
+    @PostConstruct
+    public void init(){
+        Activite a1 = new Activite(1,"11/02/2020","Activite X","14h","17h","Privee",1,1);
+        Activite a2 = new Activite(2,"16/03/2020","Activite Y","10h","11h","Publique",2,2);
+
+        addActivite(a1);
+        addActivite(a2);
+    }
 
 
     public Iterable<Activite> getActivites() {
