@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div align=\"center\">\n    <h2>Form add Activite</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom de l'activite</mat-label>\n            <input matInput formControlName=\"nom\">\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Jour </mat-label>\n                <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                <mat-datepicker #jour></mat-datepicker>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de debut</mat-label>\n                <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de fin</mat-label>\n                <input matInput [ngxTimepicker]=\"heureFin\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureFin\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureFin (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Type d'activite</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"publiqueOuPrivee\">\n                <mat-option value=\"1\">Publique</mat-option>\n                <mat-option value=\"2\">Privee</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Bassin</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idBassin\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Employe</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idEmploye\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n\n            <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div align=\"center\">\n    <h2>Form add Activite</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom de l'activite</mat-label>\n            <input matInput formControlName=\"nom\">\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Jour </mat-label>\n                <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                <mat-datepicker #jour></mat-datepicker>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de debut</mat-label>\n                <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de fin</mat-label>\n                <input matInput [ngxTimepicker]=\"heureFin\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureFin\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureFin (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Type d'activite</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"publiqueOuPrivee\">\n                <mat-option value=\"Publique\">Publique</mat-option>\n                <mat-option value=\"Privee\">Privee</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Bassin</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idBassin\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                \n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Employe</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idEmploye\">\n                    <mat-option value=\"1\">1</mat-option>\n                    <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>\n");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<h2>Liste des activites</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n        <!-- Position Column -->\n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> jour </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n        <!-- Name Column -->\n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> nom </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n        <!-- Weight Column -->\n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> heureDebut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n                <!-- Symbol Column -->\n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> heureFin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        <!-- Symbol Column -->\n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> publiqueOuPrivee </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n      </mat-table>\n\n      <ul>\n            <li *ngFor=\"let item of activites\">\n                {{ item.idActivite }} :  {{ item.nom }}\n            </li>\n        </ul>\n        ======");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<h2>Liste des activites</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n      \n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ");
 
 /***/ }),
 
@@ -101,6 +101,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/error-page/error-page.component.html":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/menu/error-page/error-page.component.html ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("Page not found\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/menu/menu.component.html":
 /*!*************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/menu/menu/menu.component.html ***!
@@ -110,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<h1>Aquarium</h1>\n<nav>\n  <ul>\n    <li><a routerLink=\"/addActivite\" routerLinkActive=\"active\">Ajouter Activites</a></li>\n    <li><a routerLink=\"/showActivite\" routerLinkActive=\"active\"> Liste Activites</a></li>\n    <li><a href=\"#\">Especes</a></li>\n    <li><a href=\"#\">Bassins</a></li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<h1>Aquarium</h1>\n<nav>\n  <ul>\n    <li><a routerLink=\"/addActivite\" routerLinkActive=\"active\">Ajouter Activites</a></li>\n    <li><a routerLink=\"/showActivite\" routerLinkActive=\"active\"> Liste Activites</a></li>\n    <li><a >Especes</a></li>\n    <li><a >Bassins</a></li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>");
 
 /***/ }),
 
@@ -711,6 +724,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./activite/add-activite/add-activite.component */ "./src/app/activite/add-activite/add-activite.component.ts");
 /* harmony import */ var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./activite/show-activite/show-activite.component */ "./src/app/activite/show-activite/show-activite.component.ts");
+/* harmony import */ var _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./animal/add-animal/add-animal.component */ "./src/app/animal/add-animal/add-animal.component.ts");
+/* harmony import */ var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./menu/menu/menu.component */ "./src/app/menu/menu/menu.component.ts");
+/* harmony import */ var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./menu/error-page/error-page.component */ "./src/app/menu/error-page/error-page.component.ts");
+
+
+
 
 
 
@@ -719,8 +738,10 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: 'addActivite', component: _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__["AddActiviteComponent"] },
     { path: 'showActivite', component: _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_4__["ShowActiviteComponent"] },
-    { path: '', redirectTo: '/addActivite', pathMatch: 'full' },
-    { path: '**', component: _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_3__["AddActiviteComponent"] }
+    { path: 'addAnimal', component: _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_5__["AddAnimalComponent"] },
+    { path: 'welcomePage', component: _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"] },
+    { path: '', redirectTo: '/welcomePage', pathMatch: 'full' },
+    { path: '**', component: _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_7__["ErrorPageComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -850,6 +871,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./activite/add-activite/add-activite.component */ "./src/app/activite/add-activite/add-activite.component.ts");
 /* harmony import */ var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./activite/show-activite/show-activite.component */ "./src/app/activite/show-activite/show-activite.component.ts");
 /* harmony import */ var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./menu/menu/menu.component */ "./src/app/menu/menu/menu.component.ts");
+/* harmony import */ var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./menu/error-page/error-page.component */ "./src/app/menu/error-page/error-page.component.ts");
+
 
 
 
@@ -924,7 +947,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__["AddSecteurComponent"],
             _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__["AddActiviteComponent"],
             _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__["ShowActiviteComponent"],
-            _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__["MenuComponent"]
+            _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__["MenuComponent"],
+            _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_60__["ErrorPageComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1165,6 +1189,50 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login.component.css */ "./src/app/login/login/login.component.css")).default]
     })
 ], LoginComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/menu/error-page/error-page.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/menu/error-page/error-page.component.css ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21lbnUvZXJyb3ItcGFnZS9lcnJvci1wYWdlLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/menu/error-page/error-page.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/menu/error-page/error-page.component.ts ***!
+  \*********************************************************/
+/*! exports provided: ErrorPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorPageComponent", function() { return ErrorPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ErrorPageComponent = class ErrorPageComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ErrorPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-error-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./error-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/error-page/error-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./error-page.component.css */ "./src/app/menu/error-page/error-page.component.css")).default]
+    })
+], ErrorPageComponent);
 
 
 

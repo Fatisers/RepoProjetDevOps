@@ -62,6 +62,8 @@ import { AddSecteurComponent } from './secteur/add-secteur/add-secteur.component
 import { AddActiviteComponent } from './activite/add-activite/add-activite.component';
 import { ShowActiviteComponent } from './activite/show-activite/show-activite.component';
 import { MenuComponent } from './menu/menu/menu.component';
+import { ErrorPageComponent } from './menu/error-page/error-page.component';
+import { WelcomePageComponent } from './menu/welcome-page/welcome-page.component';
 
 
 @NgModule({
@@ -75,7 +77,9 @@ import { MenuComponent } from './menu/menu/menu.component';
     AddSecteurComponent,
     AddActiviteComponent,
     ShowActiviteComponent,
-    MenuComponent
+    MenuComponent,
+    ErrorPageComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,

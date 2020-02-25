@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0d9e1-9c1e-4f59-9c6f-2057858d0df6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Activite.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Activite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/menu/menu/menu.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/menu/menu/menu.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es5.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es5.js" />
@@ -64,7 +55,7 @@
       <file leaf-file-name="Activite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="-245">
               <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding />
             </state>
@@ -1351,7 +1342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="-245">
           <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding />
         </state>
