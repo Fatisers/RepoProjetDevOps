@@ -30,8 +30,8 @@
             <mat-form-field style="width:300px" appearance="fill" >
             <mat-label>Type d'activite</mat-label>
             <mat-select name="publiqueOuPrivee" formControlName="publiqueOuPrivee">
-                <mat-option value="1">Publique</mat-option>
-                <mat-option value="2">Privee</mat-option>
+                <mat-option value="Publique">Publique</mat-option>
+                <mat-option value="Privee">Privee</mat-option>
             </mat-select>
             </mat-form-field>
             <br>
@@ -40,17 +40,18 @@
             <mat-select name="publiqueOuPrivee" formControlName="idBassin">
                 <mat-option value="1">1</mat-option>
                 <mat-option value="2">2</mat-option>
+                
             </mat-select>
             </mat-form-field>
             <br>
             <mat-form-field style="width:300px" appearance="fill" >
             <mat-label>Employe</mat-label>
             <mat-select name="publiqueOuPrivee" formControlName="idEmploye">
-                <mat-option value="1">1</mat-option>
-                <mat-option value="2">2</mat-option>
+                    <mat-option value="1">1</mat-option>
+                    <mat-option value="2">2</mat-option>
             </mat-select>
             </mat-form-field>
-
+            <br>
             <button mat-stroked-button>Ajouter</button>
     </form>
 </div>
