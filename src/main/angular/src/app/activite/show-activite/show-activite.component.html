@@ -1,44 +1,39 @@
 
 <h2>Liste des activites</h2>
 <mat-table [dataSource]="activites" class="mat-elevation-z8">
-        <!-- Position Column -->
+      
         <ng-container matColumnDef="jour">
-          <mat-header-cell *matHeaderCellDef> jour </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.jour}} </mat-cell>
         </ng-container>
       
-        <!-- Name Column -->
+       
         <ng-container matColumnDef="nom">
-          <mat-header-cell *matHeaderCellDef> nom </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.nom}} </mat-cell>
         </ng-container>
       
-        <!-- Weight Column -->
+       
         <ng-container matColumnDef="heureDebut">
-          <mat-header-cell *matHeaderCellDef> heureDebut </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.heureDebut}} </mat-cell>
         </ng-container>
       
 
-                <!-- Symbol Column -->
+       
         <ng-container matColumnDef="heureFin">
-          <mat-header-cell *matHeaderCellDef> heureFin </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.heureFin}} </mat-cell>
         </ng-container>
 
-        <!-- Symbol Column -->
+        
         <ng-container matColumnDef="publiqueOuPrivee">
-                <mat-header-cell *matHeaderCellDef> publiqueOuPrivee </mat-header-cell>
+                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.publiqueOuPrivee}} </mat-cell>
               </ng-container>
       
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-      </mat-table>
+</mat-table>
 
-      <ul>
-            <li *ngFor="let item of activites">
-                {{ item.idActivite }} :  {{ item.nom }}
-            </li>
-        </ul>
-        ======
+    
