@@ -1,19 +1,59 @@
 <div align="center">
     <h2>Visiteur Form</h2>
-    <mat-form-field style="width:300px" appearance="fill">
-        <mat-label>Jour de la visite</mat-label>
-        <input matInput [matDatepicker]="JourVisite">
-         <mat-datepicker-toggle matSuffix [for]="JourVisite"></mat-datepicker-toggle>
-         <mat-datepicker #JourVisite></mat-datepicker>
-     </mat-form-field>
-    <br>
-    
-    <mat-form-field style="width:300px" appearance="fill">
-            <mat-label>Heure</mat-label>
-            <input matInput [ngxTimepicker]="endTime" [format]="24"  placeholder="{{placeholderTime}}" formControlName="endTime" />
-    </mat-form-field>
-    <ngx-material-timepicker #endTime (timeSet)="timeChange($event)" [minutesGap]="10"></ngx-material-timepicker>
-   
+    <form [formGroup]="searchForm" (ngSubmit)="onFormSubmit()">
+            <mat-form-field style="width:300px" appearance="fill">
+                    <mat-label>Jour </mat-label>
+                    <input matInput [matDatepicker]="jour" formControlName="jour">
+                    <mat-datepicker-toggle matSuffix [for]="jour"></mat-datepicker-toggle>
+                    <mat-datepicker #jour></mat-datepicker>
+                </mat-form-field>
+                <br>
+                <mat-form-field style="width:300px" appearance="fill">
+                    <mat-label>Heure de debut</mat-label>
+                    <input matInput [ngxTimepicker]="heureDebut" [format]="24"  placeholder="{{placeholderTime}}" formControlName="heureDebut" />
+                </mat-form-field>
+                <ngx-material-timepicker #heureDebut (timeSet)="timeChange($event)" [minutesGap]="10"></ngx-material-timepicker>
+                <br>
     <br>
     <button mat-stroked-button>Liste d'activités disponibles </button>
+    </form>
 </div>
+<br> <br>
+<h2 align="center">Liste des activites</h2>
+<mat-table [dataSource]="activites" class="mat-elevation-z8">
+      
+        <ng-container matColumnDef="jour">
+          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.jour}} </mat-cell>
+        </ng-container>
+      
+       
+        <ng-container matColumnDef="nom">
+          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.nom}} </mat-cell>
+        </ng-container>
+      
+       
+        <ng-container matColumnDef="heureDebut">
+          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.heureDebut}} </mat-cell>
+        </ng-container>
+      
+
+       
+        <ng-container matColumnDef="heureFin">
+          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.heureFin}} </mat-cell>
+        </ng-container>
+
+        
+        <ng-container matColumnDef="publiqueOuPrivee">
+                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.publiqueOuPrivee}} </mat-cell>
+              </ng-container>
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+    
