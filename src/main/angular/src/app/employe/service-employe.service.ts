@@ -49,4 +49,10 @@ export class ServiceEmployeService {
   return this.http.get("/Employes")
 }
 
+login(employe : any): Observable<any> {
+  var e : Employe = employe
+  console.log("dddddd "+ e)
+  return this.http.get("/login/"+ e.identifiant+"/"+e.motdepasse)
+}
+
 }
