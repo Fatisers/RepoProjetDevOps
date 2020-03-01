@@ -1,11 +1,34 @@
 
-<h1>Aquarium</h1>
+<h1><a routerLink="/welcomePage" routerLinkActive="active">Aquarium</a></h1>
 <nav>
   <ul>
-    <li><a routerLink="/addActivite" routerLinkActive="active">Ajouter Activites</a></li>
-    <li><a routerLink="/showActivite" routerLinkActive="active"> Liste Activites</a></li>
-    <li><a >Especes</a></li>
-    <li><a >Bassins</a></li>
+    <li><a *ngIf="employe.role != 'Visiteur'" routerLink="/addActivite" routerLinkActive="active">Ajouter une Activite</a></li>
+    <li><a routerLink="/showActivite" routerLinkActive="active"> Emploi des Activites de l'aquarium</a></li>
+    <li><a *ngIf="employe.role != 'Visiteur'" routerLink="/addAnimal" routerLinkActive="active"> Ajouter un animal</a></li>
+    <li><a routerLink="/showAnimal" routerLinkActive="active"> Animaux de l'aquarium</a></li>
+    <li><a *ngIf="employe.role != 'Visiteur'" routerLink="/addEspece" routerLinkActive="active"> Ajouter une Espece</a></li>
+    <li><a routerLink="/showEspece" routerLinkActive="active">Especes de l'aquarium </a></li>
+    <li><a routerLink="/visitePage" routerLinkActive="active">Visites d'activites</a></li>
+    <li><a *ngIf="loginbool == true" (click)="login()">Login (Reserve aux responsables)</a></li>
+    <li><a *ngIf="employe.role =='Gestionnaire'" routerLink="/addEmploye" routerLinkActive="active">Ajouter un employe</a></li>
   </ul>
 </nav>
-<router-outlet></router-outlet>
+<div align="center" *ngIf="showForm==false">
+        <h2>Login </h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                  <mat-form-field style="width:300px" appearance="fill">
+                      <mat-label>Identifiant</mat-label>
+                      <input matInput formControlName="identifiant">
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field style="width:300px" appearance="fill">
+                        <mat-label>Mot de passe</mat-label>
+                        <input matInput formControlName="motdepasse" type="password"> 
+                   </mat-form-field>
+                  <br>
+        <br>
+        <button mat-stroked-button>Se connecter </button>
+        </form>
+    </div>
+
+<router-outlet></router-outlet> 
