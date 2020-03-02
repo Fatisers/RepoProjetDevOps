@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0d9e1-9c1e-4f59-9c6f-2057858d0df6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/ActiviteController$AnimalController.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/ActiviteController$AnimalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/EmployeController.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/EmployeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Animal.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Animal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Employe.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Employe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EmployeService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EmployeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EspeceService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EspeceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/SecteurService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/SecteurService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/show-activite/show-activite.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/show-activite/show-activite.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/service-animal.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/service-animal.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.css" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/employe/add-employe/add-employe.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/employe/add-employe/add-employe.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/menu/welcome-page/welcome-page.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/menu/welcome-page/welcome-page.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/secteur/service-secteur.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/secteur/service-secteur.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es5.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es5.js.map" afterPath="$PROJECT_DIR$/target/classes/static/main-es5.js.map" />
     </list>
     <ignored path="ProjectAquarium.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimalService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnimalService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -106,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
+            <state relative-caret-position="705">
               <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,8 +99,8 @@
       <file leaf-file-name="ActiviteService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,11 +176,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
       </list>
     </option>
   </component>
@@ -919,7 +877,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1260" height="719" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -928,7 +886,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21939586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21939586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29064038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1255,16 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1308,16 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/ProjectAquariumApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1331,6 +1269,26 @@
         <state relative-caret-position="390">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

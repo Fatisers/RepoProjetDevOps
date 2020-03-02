@@ -24,11 +24,13 @@ public class ActiviteService {
     public void init(){
         Activite a1 = new Activite(1,"11/02/2020","Inspection de la qualité de l’eau","14:00","17:00","Privee",1,1);
         Activite a2 = new Activite(2,"16/03/2020","Nourissage bassin","10:50","11:20","Publique",2,2);
-        Activite a3 = new Activite(2,"22/01/2020","Bilan vétérinaire","13:10","14:30","Privee",2,2);
+        Activite a3 = new Activite(3,"22/01/2020","Bilan vétérinaire","13:10","14:30","Privee",2,2);
+        Activite a4 = new Activite(4,"22/01/2020","Baleine show","10:00","12:00","Publique",2,2);
 
         addActivite(a1);
         addActivite(a2);
         addActivite(a3);
+        addActivite(a4);
     }
 
 
