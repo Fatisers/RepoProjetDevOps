@@ -1,12 +1,10 @@
 import { Injectable, NgModule } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpHeaders, HttpClientModule } from '@angular/common/http';
-import { Activite } from '../interfaces/Activite';
+import { Espece } from '../interfaces/Espece';
+import { HttpHeaders, HttpClientModule, HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-
-
-export interface ActiviteResponse {
-	results?: Activite[]; 
+export interface EspeceResponse {
+  results?: Espece[]; 
 }
 
 const httpOptions = {
@@ -15,10 +13,10 @@ const httpOptions = {
   })
 };
 
+
 @Injectable({
   providedIn: 'root'
 })
-
 
 @NgModule({
   imports: [
@@ -26,13 +24,15 @@ const httpOptions = {
   ]
 })
 
-export class ServiceActiviteService {
+
+export class ServiceEspeceService {
+
 
   constructor(private http: HttpClient) { }
 
-  addActivite(activite: any)  {
-    this.http.post("/addactivite",activite,httpOptions).subscribe(res => {     
-      console.log(activite);
+  addEspece(espece: any)  {
+    this.http.post("/addEspece",espece,httpOptions).subscribe(res => {     
+      console.log(espece);
     },
     (err: HttpErrorResponse) => {
           if (err.error instanceof Error) {		 
@@ -46,13 +46,6 @@ export class ServiceActiviteService {
  }
 
  getAll(): Observable<any> {
-  return this.http.get("/activites")
+  return this.http.get("/especes")
 }
-
-searchactivite(activite : any): Observable<any> {
-  let a : Activite = activite
-  console.log("dddddd "+ a)
-  return this.http.get("/searchactivite/"+ a.jour+"/"+a.heureDebut)
-}
-
 }

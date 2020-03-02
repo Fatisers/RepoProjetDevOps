@@ -1,34 +1,34 @@
 
-<h2 align="center">Liste des animaux</h2>
+<h2 align="center">Animaux de l'aquarium</h2>
 <mat-table [dataSource]="animaux" class="mat-elevation-z8">
     
         <ng-container matColumnDef="nom">
-          <mat-header-cell *matHeaderCellDef> Nom</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Nom de l'animal</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.nom}} </mat-cell>
         </ng-container>
       
        
         <ng-container matColumnDef="sexe">
-          <mat-header-cell *matHeaderCellDef> sexe</mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Sexe</mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.sexe}} </mat-cell>
         </ng-container>
       
        
         <ng-container matColumnDef="signeDistinctif">
-          <mat-header-cell *matHeaderCellDef> signeDistinctif </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Signe Distinctif </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.signeDistinctif}} </mat-cell>
         </ng-container>
       
 
        
         <ng-container matColumnDef="dateArrivee">
-          <mat-header-cell *matHeaderCellDef> dateArrivee </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Date d'Arrivee </mat-header-cell>
           <mat-cell *matCellDef="let element"> {{element.dateArrivee}} </mat-cell>
         </ng-container>
 
         
         <ng-container matColumnDef="dateDepartPossible">
-                <mat-header-cell *matHeaderCellDef> dateDepartPossible </mat-header-cell>
+                <mat-header-cell *matHeaderCellDef> Date de Depart Possible </mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.dateDepartPossible}} </mat-cell>
               </ng-container>
       

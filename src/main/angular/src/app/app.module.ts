@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,8 +11,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
-
-
 
 
 import { MatSliderModule } from '@angular/material/slider';
@@ -64,12 +61,14 @@ import { ShowActiviteComponent } from './activite/show-activite/show-activite.co
 import { MenuComponent } from './menu/menu/menu.component';
 import { ErrorPageComponent } from './menu/error-page/error-page.component';
 import { WelcomePageComponent } from './menu/welcome-page/welcome-page.component';
+import { ShowAnimalComponent } from './animal/show-animal/show-animal.component';
+import { AddEspeceComponent } from './espece/add-espece/add-espece.component';
+import { ShowEspeceComponent } from './espece/show-espece/show-espece.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavComponent,
     AddEmployeComponent,
     LoginComponent,
     AddAnimalComponent,
@@ -79,7 +78,10 @@ import { WelcomePageComponent } from './menu/welcome-page/welcome-page.component
     ShowActiviteComponent,
     MenuComponent,
     ErrorPageComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    ShowAnimalComponent,
+    AddEspeceComponent,
+    ShowEspeceComponent
   ],
   imports: [
     BrowserModule,

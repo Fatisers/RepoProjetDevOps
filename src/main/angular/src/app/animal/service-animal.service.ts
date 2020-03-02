@@ -40,10 +40,10 @@ export class ServiceAnimalService {
     },
     (err: HttpErrorResponse) => {
           if (err.error instanceof Error) {		 
-            console.log('An error occurred:', err.error.message);
+            console.log('Erreur : ', err.error.message);
           } else {				 
-            console.log('Backend returned status code: ', err.status);
-            console.log('Response body:', err.error);
+            console.log("Status code", err.status);
+            console.log("Message d'erreur", err.error);
           }
         }
     );

@@ -46,7 +46,6 @@ export class VisiteFormComponent implements OnInit {
   });
 
   onFormSubmit() {
-    //this.service.addAnimal(this.addForm.value);
     this.service.searchactivite(this.searchForm.value).subscribe(
       data => this.activites = data,
       error => console.log("Erreur 3"+error)   

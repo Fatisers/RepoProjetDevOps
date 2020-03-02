@@ -1,0 +1,39 @@
+
+<h2 align="center">Liste des especes</h2>
+<mat-table [dataSource]="especes" class="mat-elevation-z8">
+    
+        <ng-container matColumnDef="type">
+          <mat-header-cell *matHeaderCellDef> Type de l'espece</mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.type}} </mat-cell>
+        </ng-container>
+      
+       
+        <ng-container matColumnDef="sexe">
+          <mat-header-cell *matHeaderCellDef> Sexe</mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.sexe}} </mat-cell>
+        </ng-container>
+      
+       
+        <ng-container matColumnDef="esperancedevie">
+          <mat-header-cell *matHeaderCellDef> Esperance de vie </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.esperancedevie}} </mat-cell>
+        </ng-container>
+      
+
+       
+        <ng-container matColumnDef="regimeAlimentaire">
+          <mat-header-cell *matHeaderCellDef>Regime Alimentaire </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.regimeAlimentaire}} </mat-cell>
+        </ng-container>
+
+        
+        <ng-container matColumnDef="niveauDeMenace">
+                <mat-header-cell *matHeaderCellDef> Niveau de menace </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.niveauDeMenace}} </mat-cell>
+              </ng-container>
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+    

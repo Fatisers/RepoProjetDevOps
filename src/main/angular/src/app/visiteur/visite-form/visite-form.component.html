@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Visiteur Form</h2>
+    <h2>Quand est-ce que voulez-vous visiter l'Aquarium? </h2>
     <form [formGroup]="searchForm" (ngSubmit)="onFormSubmit()">
             <mat-form-field style="width:300px" appearance="fill">
                     <mat-label>Jour </mat-label>
@@ -19,7 +19,7 @@
     </form>
 </div>
 <br> <br>
-<h2 align="center">Liste des activites</h2>
+<h2 align="center">Liste des activites publiques disponibles pour vous</h2>
 <mat-table [dataSource]="activites" class="mat-elevation-z8">
       
         <ng-container matColumnDef="jour">

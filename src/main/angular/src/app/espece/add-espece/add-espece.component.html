@@ -1,0 +1,37 @@
+
+<div align="center">
+        <h2>Ajouter une Espece</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onFormSubmit()">
+    <mat-form-field style="width:300px" appearance="fill">
+      <mat-label>Type</mat-label>
+      <input matInput formControlName="type">
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Sexe</mat-label>
+            <mat-select formControlName="sexe">
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Femelle">Femelle</mat-option>
+            </mat-select>
+          </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Esperance de vie</mat-label>
+            <input matInput formControlName="esperancedevie" type="number">
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Regime Alimentaire</mat-label>
+            <input matInput formControlName="regimeAlimentaire">
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width:300px" appearance="fill">
+            <mat-label>Niveau De Menace</mat-label>
+            <input matInput formControlName="niveauDeMenace" type="number">
+    </mat-form-field>
+    
+    <br>
+    <button mat-stroked-button>Ajouter</button>
+  </form>
+  </div>
+

@@ -1,14 +1,17 @@
 <div align="center">
-        <h2>Login Form</h2>
-    <mat-form-field style="width:300px" appearance="fill">
-      <mat-label>Identifiant</mat-label>
-      <input matInput>
-    </mat-form-field>
+    <h2>Login </h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+              <mat-form-field style="width:300px" appearance="fill">
+                  <mat-label>Identifiant</mat-label>
+                  <input matInput formControlName="identifiant">
+              </mat-form-field>
+              <br>
+              <mat-form-field style="width:300px" appearance="fill">
+                    <mat-label>Mot de passe</mat-label>
+                    <input matInput formControlName="motdepasse" type="password"> 
+               </mat-form-field>
+              <br>
     <br>
-    <mat-form-field style="width:300px" appearance="fill">
-        <mat-label>Mot de passe</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <br>
-    <button mat-stroked-button>Se connecter</button>
+    <button mat-stroked-button>Se connecter </button>
+    </form>
 </div>

@@ -2,11 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0d9e1-9c1e-4f59-9c6f-2057858d0df6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/angular/src/app/my-nav/my-nav.component.ts" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/ActiviteController$AnimalController.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/ActiviteController$AnimalController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/EmployeController.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/Controllers/EmployeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Animal.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Animal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Employe.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/models/Employe.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/ActiviteService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/AnimalService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EmployeService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EmployeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EspeceService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/EspeceService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/SecteurService.class" afterPath="$PROJECT_DIR$/target/classes/com/upem/devops/ProjectAquarium/services/SecteurService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/add-activite/add-activite.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/service-activite.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/activite/show-activite/show-activite.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/activite/show-activite/show-activite.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/service-animal.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/service-animal.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.css" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/animal/show-animal/show-animal.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app-routing.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/menu/menu/menu.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/menu/menu/menu.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/employe/add-employe/add-employe.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/employe/add-employe/add-employe.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/menu/welcome-page/welcome-page.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/menu/welcome-page/welcome-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/secteur/service-secteur.service.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/secteur/service-secteur.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.html" afterPath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.ts" afterPath="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" afterPath="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" afterPath="$PROJECT_DIR$/target/classes/static/main-es2015.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/main-es5.js" afterPath="$PROJECT_DIR$/target/classes/static/main-es5.js" />
@@ -35,38 +69,38 @@
       <file leaf-file-name="EmployeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="225">
               <caret line="30" column="26" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiviteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Activite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="705">
+              <caret line="58" column="27" selection-start-line="52" selection-start-column="8" selection-end-line="58" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BassinService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/BassinService.java">
+      <file leaf-file-name="AnimalService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1515">
+              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,8 +109,20 @@
       <file leaf-file-name="EmployeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="885">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectAquariumApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/ProjectAquariumApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,41 +141,34 @@
       <file leaf-file-name="ActiviteService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimalService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Employe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="855">
+              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiviteController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiviteRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Date.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteRepository.java" />
@@ -164,26 +202,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/DateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/AnimalController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EspeceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/SecteurController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/BassinRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/BassinController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/angular/angular.json" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/login/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/visiteur/visite-form/visite-form.component.html" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/main/angular/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/BassinService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java" />
       </list>
     </option>
   </component>
@@ -230,7 +269,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -549,13 +589,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../upem" />
     <property name="editor.config.accepted" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -883,10 +928,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26953748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21939586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30706075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29064038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -897,7 +942,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14785373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30622008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -917,31 +962,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -949,9 +973,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,10 +982,7 @@
         <state relative-caret-position="75">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#798#799#0" expanded="false" />
-            <element signature="e#1114#1115#0" expanded="false" />
-            <element signature="e#1158#1159#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,9 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,9 +998,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -992,15 +1006,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#693#694#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-            <element signature="e#937#938#0" expanded="false" />
-            <element signature="e#980#981#0" expanded="false" />
-            <element signature="e#1029#1030#0" expanded="false" />
-            <element signature="e#1071#1072#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1015,8 @@
         <state relative-caret-position="75">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,9 +1025,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,53 +1037,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/ProjectAquariumApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/DateController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Date.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EspeceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
-          <folding>
-            <marker date="1582138639000" expanded="true" signature="143:3448" ph="..." />
-            <marker date="1582138639000" expanded="true" signature="2257:2372" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,15 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,23 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/SecteurController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,7 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,23 +1163,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Jenkinsfile" />
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Espece.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="385">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Secteur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1262,41 +1201,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/SecteurController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="258">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Animal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EspeceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="243">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Espece.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/BassinService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="190">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EspeceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/SecteurService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1308,42 +1273,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/ActiviteService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="585">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="58" column="27" selection-start-line="52" selection-start-column="8" selection-end-line="58" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Employe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="1515">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/EmployeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="225">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/Controllers/ActiviteController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/EmployeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="885">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/ProjectAquariumApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/models/Activite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/upem/devops/ProjectAquarium/services/AnimalService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding />
         </state>
       </provider>

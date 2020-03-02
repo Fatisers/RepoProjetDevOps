@@ -26,10 +26,8 @@ public class ActiviteController {
         }
 
         @GetMapping("/activite/{id}")
-        public Activite getAnimal(@PathVariable Integer id) {
-            Activite a = new Activite(1,"Mardi", "Activite", "14h", "16h", "privee", 1, 1);
-            //return animalService.getAnimalById(id);
-            return a;
+        public Activite getAcivite(@PathVariable Integer id) {
+            return activiteService.getActiviteById(id);
         }
 
 
@@ -52,6 +50,14 @@ public class ActiviteController {
         public void deleteActivite(@PathVariable int id) {
             activiteService.deleteActivite(id);
         }
+
+
+
+        @GetMapping("/searchactivite/{date}/{hour}")
+        public Iterable<Activite> searchByDateAndHour(@PathVariable String date,@PathVariable String hour) {
+            return activiteService.searchByDateAndHour(date,hour);
+        }
+
 
     }
 

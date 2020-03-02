@@ -51,7 +51,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div align=\"center\">\n    <h2>Form add Activite</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom de l'activite</mat-label>\n            <input matInput formControlName=\"nom\">\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Jour </mat-label>\n                <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                <mat-datepicker #jour></mat-datepicker>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de debut</mat-label>\n                <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de fin</mat-label>\n                <input matInput [ngxTimepicker]=\"heureFin\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureFin\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureFin (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Type d'activite</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"publiqueOuPrivee\">\n                <mat-option value=\"Publique\">Publique</mat-option>\n                <mat-option value=\"Privee\">Privee</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Bassin</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idBassin\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                \n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Employe</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"idEmploye\">\n                    <mat-option value=\"1\">1</mat-option>\n                    <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>\n";
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n    <h2>Ajouter une Activite</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom de l'activite</mat-label>\n            <input matInput formControlName=\"nom\">\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Jour </mat-label>\n                <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                <mat-datepicker #jour></mat-datepicker>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de debut</mat-label>\n                <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                <mat-label>Heure de fin</mat-label>\n                <input matInput [ngxTimepicker]=\"heureFin\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureFin\" />\n            </mat-form-field>\n            <ngx-material-timepicker #heureFin (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Type d'activite</mat-label>\n            <mat-select name=\"publiqueOuPrivee\" formControlName=\"publiqueOuPrivee\">\n                <mat-option value=\"Publique\">Publique</mat-option>\n                <mat-option value=\"Privee\">Privee</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Bassin</mat-label>\n            <mat-select name=\"idBassin\" formControlName=\"idBassin\">\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                \n            </mat-select>\n            </mat-form-field>\n            <br>\n            <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n            <mat-label>Employe</mat-label>\n            <mat-select name=\"idEmploye\" formControlName=\"idEmploye\">\n                    <mat-option value=\"1\">1</mat-option>\n                    <mat-option value=\"2\">2</mat-option>\n            </mat-select>\n            </mat-form-field>\n            <br>\n            <button mat-stroked-button>Ajouter</button>\n    </form>\n</div>\n";
     /***/
   },
 
@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<h2>Liste des activites</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n      \n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ";
+    __webpack_exports__["default"] = "\n<h2 align=\"center\">Activites de l'aquarium</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n      \n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ";
     /***/
   },
 
@@ -91,7 +91,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Form add animal</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Nom</mat-label>\n      <input matInput formControlName=\"nom\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Sexe</mat-label>\n            <mat-select formControlName=\"sexe\">\n              <mat-option value=\"option\">Male</mat-option>\n              <mat-option value=\"option\">Femelle</mat-option>\n            </mat-select>\n          </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Signe distinctif</mat-label>\n            <input matInput formControlName=\"signeDistinctif\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Date d'arrivee</mat-label>\n        <input matInput [matDatepicker]=\"dateArrivee\" formControlName=\"dateArrivee\">\n        <mat-datepicker-toggle matSuffix [for]=\"dateArrivee\"></mat-datepicker-toggle>\n        <mat-datepicker #dateArrivee></mat-datepicker>\n      </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Date de depart possible</mat-label>\n            <input matInput [matDatepicker]=\"dateDepart\" formControlName=\"dateDepartPossible\">\n            <mat-datepicker-toggle matSuffix [for]=\"dateDepart\"></mat-datepicker-toggle>\n            <mat-datepicker #dateDepart></mat-datepicker>\n          </mat-form-field>\n        <br>\n\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n      <mat-label>Espece</mat-label>\n      <mat-select name=\"idEspece\" formControlName=\"idEspece\">\n        <mat-option value=\"1\">Espece1</mat-option>\n        <mat-option value=\"2\">Espece2</mat-option>\n        <mat-option value=\"3\">Espece3</mat-option>\n      </mat-select>\n    </mat-form-field>\n  <br>\n\n\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n        <mat-label>Bassin</mat-label>\n        <mat-select name=\"idBassin\" formControlName=\"idBassin\">\n          <mat-option value=\"1\">Bassin1</mat-option>\n          <mat-option value=\"2\">Bassin2</mat-option>\n          <mat-option value=\"3\">Bassin3</mat-option>\n        </mat-select>\n      </mat-form-field>\n    <br>\n    <button mat-stroked-button>Ajouter</button>\n  </form>\n  </div>\n\n";
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Form add animal</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Nom</mat-label>\n      <input matInput formControlName=\"nom\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Sexe</mat-label>\n            <mat-select formControlName=\"sexe\">\n              <mat-option value=\"Male\">Male</mat-option>\n              <mat-option value=\"Femelle\">Femelle</mat-option>\n            </mat-select>\n          </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Signe distinctif</mat-label>\n            <input matInput formControlName=\"signeDistinctif\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Date d'arrivee</mat-label>\n        <input matInput [matDatepicker]=\"dateArrivee\" formControlName=\"dateArrivee\">\n        <mat-datepicker-toggle matSuffix [for]=\"dateArrivee\"></mat-datepicker-toggle>\n        <mat-datepicker #dateArrivee></mat-datepicker>\n      </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Date de depart possible</mat-label>\n            <input matInput [matDatepicker]=\"dateDepart\" formControlName=\"dateDepartPossible\">\n            <mat-datepicker-toggle matSuffix [for]=\"dateDepart\"></mat-datepicker-toggle>\n            <mat-datepicker #dateDepart></mat-datepicker>\n          </mat-form-field>\n        <br>\n\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n      <mat-label>Espece</mat-label>\n      <mat-select name=\"idEspece\" formControlName=\"idEspece\">\n        <mat-option value=\"1\">Espece1</mat-option>\n        <mat-option value=\"2\">Espece2</mat-option>\n        <mat-option value=\"3\">Espece3</mat-option>\n      </mat-select>\n    </mat-form-field>\n  <br>\n\n\n    <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n        <mat-label>Bassin</mat-label>\n        <mat-select name=\"idBassin\" formControlName=\"idBassin\">\n          <mat-option value=\"1\">Bassin1</mat-option>\n          <mat-option value=\"2\">Bassin2</mat-option>\n          <mat-option value=\"3\">Bassin3</mat-option>\n        </mat-select>\n      </mat-form-field>\n    <br>\n    <button mat-stroked-button>Ajouter</button>\n  </form>\n  </div>\n\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/animal/show-animal/show-animal.component.html":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/animal/show-animal/show-animal.component.html ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAnimalShowAnimalShowAnimalComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<h2 align=\"center\">Animaux de l'aquarium</h2>\n<mat-table [dataSource]=\"animaux\" class=\"mat-elevation-z8\">\n    \n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> Nom de l'animal</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"sexe\">\n          <mat-header-cell *matHeaderCellDef> Sexe</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.sexe}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"signeDistinctif\">\n          <mat-header-cell *matHeaderCellDef> Signe Distinctif </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.signeDistinctif}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"dateArrivee\">\n          <mat-header-cell *matHeaderCellDef> Date d'Arrivee </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.dateArrivee}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"dateDepartPossible\">\n                <mat-header-cell *matHeaderCellDef> Date de Depart Possible </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.dateDepartPossible}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ";
     /***/
   },
 
@@ -111,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<app-menu></app-menu>\n";
+    __webpack_exports__["default"] = "\n<app-menu></app-menu>\n\n";
     /***/
   },
 
@@ -131,7 +151,47 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Form add employe</h2>\n        <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom</mat-label>\n            <input matInput formControlName=\"nom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Prénom</mat-label>\n              <input matInput formControlName=\"prenom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Date de naissance</mat-label>\n              <input matInput [matDatepicker]=\"picker\" formControlName=\"dateDeNaissance\">\n              <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n              <mat-datepicker #picker></mat-datepicker>\n            </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Identifiant</mat-label>\n              <input matInput formControlName=\"identifiant\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Mot de passe</mat-label>\n              <input matInput formControlName=\"motdepasse\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Role</mat-label>\n            <mat-select formControlName=\"role\">\n              <mat-option value=\"option\">Gestionnaire de l'aquarium</mat-option>\n              <mat-option value=\"option\">Employe</mat-option>\n            </mat-select>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Adresse</mat-label>\n            <textarea matInput formControlName=\"adresse\"></textarea>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n              <mat-label>Numéro de sécurité sociale</mat-label>\n              <input matInput formControlName=\"numSecuSociale\">\n          </mat-form-field>\n          <br>\n          <button mat-stroked-button>Ajouter</button>\n        </form>\n  </div>\n";
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Ajouter un employe</h2>\n        <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Nom</mat-label>\n            <input matInput formControlName=\"nom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Prénom</mat-label>\n              <input matInput formControlName=\"prenom\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Date de naissance</mat-label>\n              <input matInput [matDatepicker]=\"picker\" formControlName=\"dateDeNaissance\">\n              <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n              <mat-datepicker #picker></mat-datepicker>\n            </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Identifiant</mat-label>\n              <input matInput formControlName=\"identifiant\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n              <mat-label>Mot de passe</mat-label>\n              <input matInput formControlName=\"motdepasse\">\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Role</mat-label>\n            <mat-select formControlName=\"role\">\n              <mat-option value=\"Responsable\">Responsable Bassin</mat-option>\n              <mat-option value=\"Employe\">Employe</mat-option>\n            </mat-select>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Adresse</mat-label>\n            <textarea matInput formControlName=\"adresse\"></textarea>\n          </mat-form-field>\n          <br>\n          <mat-form-field style=\"width:300px\" appearance=\"fill\" >\n              <mat-label>Numéro de sécurité sociale</mat-label>\n              <input matInput formControlName=\"numSecuSociale\">\n          </mat-form-field>\n          <br>\n          <button mat-stroked-button>Ajouter</button>\n        </form>\n  </div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/espece/add-espece/add-espece.component.html":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/espece/add-espece/add-espece.component.html ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppEspeceAddEspeceAddEspeceComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<div align=\"center\">\n        <h2>Ajouter une Espece</h2>\n    <form [formGroup]=\"addForm\" (ngSubmit)=\"onFormSubmit()\">\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Type</mat-label>\n      <input matInput formControlName=\"type\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Sexe</mat-label>\n            <mat-select formControlName=\"sexe\">\n              <mat-option value=\"Male\">Male</mat-option>\n              <mat-option value=\"Femelle\">Femelle</mat-option>\n            </mat-select>\n          </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Esperance de vie</mat-label>\n            <input matInput formControlName=\"esperancedevie\" type=\"number\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Regime Alimentaire</mat-label>\n            <input matInput formControlName=\"regimeAlimentaire\">\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Niveau De Menace</mat-label>\n            <input matInput formControlName=\"niveauDeMenace\" type=\"number\">\n    </mat-form-field>\n    \n    <br>\n    <button mat-stroked-button>Ajouter</button>\n  </form>\n  </div>\n\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/espece/show-espece/show-espece.component.html":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/espece/show-espece/show-espece.component.html ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppEspeceShowEspeceShowEspeceComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<h2 align=\"center\">Liste des especes</h2>\n<mat-table [dataSource]=\"especes\" class=\"mat-elevation-z8\">\n    \n        <ng-container matColumnDef=\"type\">\n          <mat-header-cell *matHeaderCellDef> Type de l'espece</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.type}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"sexe\">\n          <mat-header-cell *matHeaderCellDef> Sexe</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.sexe}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"esperancedevie\">\n          <mat-header-cell *matHeaderCellDef> Esperance de vie </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.esperancedevie}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"regimeAlimentaire\">\n          <mat-header-cell *matHeaderCellDef>Regime Alimentaire </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.regimeAlimentaire}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"niveauDeMenace\">\n                <mat-header-cell *matHeaderCellDef> Niveau de menace </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.niveauDeMenace}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ";
     /***/
   },
 
@@ -151,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div align=\"center\">\n        <h2>Login Form</h2>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n      <mat-label>Identifiant</mat-label>\n      <input matInput>\n    </mat-form-field>\n    <br>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Mot de passe</mat-label>\n        <input matInput>\n    </mat-form-field>\n    <br>\n    <button mat-stroked-button>Se connecter</button>\n</div>";
+    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Login </h2>\n    <form [formGroup]=\"loginForm\" (ngSubmit)=\"onFormSubmit()\">\n              <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                  <mat-label>Identifiant</mat-label>\n                  <input matInput formControlName=\"identifiant\">\n              </mat-form-field>\n              <br>\n              <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                    <mat-label>Mot de passe</mat-label>\n                    <input matInput formControlName=\"motdepasse\" type=\"password\"> \n               </mat-form-field>\n              <br>\n    <br>\n    <button mat-stroked-button>Se connecter </button>\n    </form>\n</div>";
     /***/
   },
 
@@ -191,27 +251,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<h1>Aquarium</h1>\n<nav>\n  <ul>\n    <li><a routerLink=\"/addActivite\" routerLinkActive=\"active\">Ajouter Activites</a></li>\n    <li><a routerLink=\"/showActivite\" routerLinkActive=\"active\"> Liste Activites</a></li>\n    <li><a >Especes</a></li>\n    <li><a >Bassins</a></li>\n  </ul>\n</nav>\n<router-outlet></router-outlet>";
+    __webpack_exports__["default"] = "\n<h1><a routerLink=\"/welcomePage\" routerLinkActive=\"active\">Aquarium</a></h1>\n<nav>\n  <ul>\n    <li><a *ngIf=\"employe.role != 'Visiteur'\" routerLink=\"/addActivite\" routerLinkActive=\"active\">Ajouter une Activite</a></li>\n    <li><a routerLink=\"/showActivite\" routerLinkActive=\"active\"> Emploi des Activites de l'aquarium</a></li>\n    <li><a *ngIf=\"employe.role != 'Visiteur'\" routerLink=\"/addAnimal\" routerLinkActive=\"active\"> Ajouter un animal</a></li>\n    <li><a routerLink=\"/showAnimal\" routerLinkActive=\"active\"> Animaux de l'aquarium</a></li>\n    <li><a *ngIf=\"employe.role != 'Visiteur'\" routerLink=\"/addEspece\" routerLinkActive=\"active\"> Ajouter une Espece</a></li>\n    <li><a routerLink=\"/showEspece\" routerLinkActive=\"active\">Especes de l'aquarium </a></li>\n    <li><a routerLink=\"/visitePage\" routerLinkActive=\"active\">Visites d'activites</a></li>\n    <li><a *ngIf=\"loginbool == true\" (click)=\"login()\">Login (Reserve aux responsables)</a></li>\n    <li><a *ngIf=\"employe.role =='Gestionnaire'\" routerLink=\"/addEmploye\" routerLinkActive=\"active\">Ajouter un employe</a></li>\n  </ul>\n</nav>\n<div align=\"center\" *ngIf=\"showForm==false\">\n        <h2>Login </h2>\n        <form [formGroup]=\"loginForm\" (ngSubmit)=\"onFormSubmit()\">\n                  <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                      <mat-label>Identifiant</mat-label>\n                      <input matInput formControlName=\"identifiant\">\n                  </mat-form-field>\n                  <br>\n                  <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                        <mat-label>Mot de passe</mat-label>\n                        <input matInput formControlName=\"motdepasse\" type=\"password\"> \n                   </mat-form-field>\n                  <br>\n        <br>\n        <button mat-stroked-button>Se connecter </button>\n        </form>\n    </div>\n\n<router-outlet></router-outlet> ";
     /***/
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/my-nav/my-nav.component.html":
-  /*!************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/my-nav/my-nav.component.html ***!
-    \************************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/welcome-page/welcome-page.component.html":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/menu/welcome-page/welcome-page.component.html ***!
+    \*****************************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppMyNavMyNavComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppMenuWelcomePageWelcomePageComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #drawer class=\"sidenav\" fixedInViewport\n      [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n      [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n      [opened]=\"(isHandset$ | async) === false\">\n    <mat-toolbar>Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item href=\"#\">Link 1</a>\n      <a mat-list-item href=\"#\">Link 2</a>\n      <a mat-list-item href=\"#\">Link 3</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span>TestAngular</span>\n    </mat-toolbar>\n  \n\n\n\n\n    <mat-form-field>\n      <mat-label>Choose a date</mat-label>\n      <input matInput [matDatepicker]=\"picker\">\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n      <mat-datepicker #picker></mat-datepicker>\n    </mat-form-field>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n";
+    __webpack_exports__["default"] = "<br>\n\n <img height=\"400\" width=\"430px\" src=\"assets/aqu2.jpg\" > \n <img height=\"400px\" width=\"400px\" src=\"assets/aqua3.jpg\" > \n <img height=\"400px\" width=\"430px\" src=\"assets/aqua.jpg\" > \n";
     /***/
   },
 
@@ -251,7 +311,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Visiteur Form</h2>\n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n        <mat-label>Jour de la visite</mat-label>\n        <input matInput [matDatepicker]=\"JourVisite\">\n         <mat-datepicker-toggle matSuffix [for]=\"JourVisite\"></mat-datepicker-toggle>\n         <mat-datepicker #JourVisite></mat-datepicker>\n     </mat-form-field>\n    <br>\n    \n    <mat-form-field style=\"width:300px\" appearance=\"fill\">\n            <mat-label>Heure</mat-label>\n            <input matInput [ngxTimepicker]=\"endTime\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"endTime\" />\n    </mat-form-field>\n    <ngx-material-timepicker #endTime (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n   \n    <br>\n    <button mat-stroked-button>Liste d'activités disponibles </button>\n</div>";
+    __webpack_exports__["default"] = "<div align=\"center\">\n    <h2>Quand est-ce que voulez-vous visiter l'Aquarium? </h2>\n    <form [formGroup]=\"searchForm\" (ngSubmit)=\"onFormSubmit()\">\n            <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                    <mat-label>Jour </mat-label>\n                    <input matInput [matDatepicker]=\"jour\" formControlName=\"jour\">\n                    <mat-datepicker-toggle matSuffix [for]=\"jour\"></mat-datepicker-toggle>\n                    <mat-datepicker #jour></mat-datepicker>\n                </mat-form-field>\n                <br>\n                <mat-form-field style=\"width:300px\" appearance=\"fill\">\n                    <mat-label>Heure de debut</mat-label>\n                    <input matInput [ngxTimepicker]=\"heureDebut\" [format]=\"24\"  placeholder=\"{{placeholderTime}}\" formControlName=\"heureDebut\" />\n                </mat-form-field>\n                <ngx-material-timepicker #heureDebut (timeSet)=\"timeChange($event)\" [minutesGap]=\"10\"></ngx-material-timepicker>\n                <br>\n    <br>\n    <button mat-stroked-button>Liste d'activités disponibles </button>\n    </form>\n</div>\n<br> <br>\n<h2 align=\"center\">Liste des activites publiques disponibles pour vous</h2>\n<mat-table [dataSource]=\"activites\" class=\"mat-elevation-z8\">\n      \n        <ng-container matColumnDef=\"jour\">\n          <mat-header-cell *matHeaderCellDef> Jour de l'activite </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.jour}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"nom\">\n          <mat-header-cell *matHeaderCellDef> Nom de l'activite</mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.nom}} </mat-cell>\n        </ng-container>\n      \n       \n        <ng-container matColumnDef=\"heureDebut\">\n          <mat-header-cell *matHeaderCellDef> Heure de Debut </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureDebut}} </mat-cell>\n        </ng-container>\n      \n\n       \n        <ng-container matColumnDef=\"heureFin\">\n          <mat-header-cell *matHeaderCellDef> Heure de Fin </mat-header-cell>\n          <mat-cell *matCellDef=\"let element\"> {{element.heureFin}} </mat-cell>\n        </ng-container>\n\n        \n        <ng-container matColumnDef=\"publiqueOuPrivee\">\n                <mat-header-cell *matHeaderCellDef> Type d'activite </mat-header-cell>\n                <mat-cell *matCellDef=\"let element\"> {{element.publiqueOuPrivee}} </mat-cell>\n              </ng-container>\n      \n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n</mat-table>\n\n    ";
     /***/
   },
 
@@ -993,10 +1053,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             console.log(activite);
           }, function (err) {
             if (err.error instanceof Error) {
-              console.log('An error occurred:', err.error.message);
+              console.log('Erreur : ', err.error.message);
             } else {
-              console.log('Backend returned status code: ', err.status);
-              console.log('Response body:', err.error);
+              console.log("Status code", err.status);
+              console.log("Message d'erreur", err.error);
             }
           });
         }
@@ -1004,6 +1064,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "getAll",
         value: function getAll() {
           return this.http.get("/activites");
+        }
+      }, {
+        key: "searchactivite",
+        value: function searchactivite(activite) {
+          var a = activite;
+          console.log("dddddd " + a);
+          return this.http.get("/searchactivite/" + a.jour + "/" + a.heureDebut);
         }
       }]);
 
@@ -1312,10 +1379,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             console.log(animal);
           }, function (err) {
             if (err.error instanceof Error) {
-              console.log('An error occurred:', err.error.message);
+              console.log('Erreur : ', err.error.message);
             } else {
-              console.log('Backend returned status code: ', err.status);
-              console.log('Response body:', err.error);
+              console.log("Status code", err.status);
+              console.log("Message d'erreur", err.error);
             }
           });
         }
@@ -1340,6 +1407,115 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
     })], ServiceAnimalService);
+    /***/
+  },
+
+  /***/
+  "./src/app/animal/show-animal/show-animal.component.css":
+  /*!**************************************************************!*\
+    !*** ./src/app/animal/show-animal/show-animal.component.css ***!
+    \**************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAnimalShowAnimalShowAnimalComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "table {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYW5pbWFsL3Nob3ctYW5pbWFsL3Nob3ctYW5pbWFsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9hbmltYWwvc2hvdy1hbmltYWwvc2hvdy1hbmltYWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/animal/show-animal/show-animal.component.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/animal/show-animal/show-animal.component.ts ***!
+    \*************************************************************/
+
+  /*! exports provided: ShowAnimalComponent */
+
+  /***/
+  function srcAppAnimalShowAnimalShowAnimalComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ShowAnimalComponent", function () {
+      return ShowAnimalComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _service_animal_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../service-animal.service */
+    "./src/app/animal/service-animal.service.ts");
+
+    var ShowAnimalComponent =
+    /*#__PURE__*/
+    function () {
+      function ShowAnimalComponent(service) {
+        var _this3 = this;
+
+        _classCallCheck(this, ShowAnimalComponent);
+
+        this.service = service;
+        this.displayedColumns = ['nom', 'sexe', 'signeDistinctif', 'dateArrivee', 'dateDepartPossible'];
+        this.service.getAll().subscribe(function (data) {
+          return _this3.animaux = data;
+        }, function (error) {
+          return console.log("Erreur " + error);
+        });
+      }
+
+      _createClass(ShowAnimalComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this4 = this;
+
+          this.service.getAll().subscribe(function (data) {
+            return _this4.animaux = data;
+          }, function (error) {
+            return console.log("Erreur " + error);
+          });
+        }
+      }]);
+
+      return ShowAnimalComponent;
+    }();
+
+    ShowAnimalComponent.ctorParameters = function () {
+      return [{
+        type: _service_animal_service__WEBPACK_IMPORTED_MODULE_2__["ServiceAnimalService"]
+      }];
+    };
+
+    ShowAnimalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-show-animal',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./show-animal.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/animal/show-animal/show-animal.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./show-animal.component.css */
+      "./src/app/animal/show-animal/show-animal.component.css")).default]
+    })], ShowAnimalComponent);
     /***/
   },
 
@@ -1401,15 +1577,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./menu/menu/menu.component */
-    "./src/app/menu/menu/menu.component.ts");
+    var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./menu/error-page/error-page.component */
+    "./src/app/menu/error-page/error-page.component.ts");
     /* harmony import */
 
 
-    var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./menu/error-page/error-page.component */
-    "./src/app/menu/error-page/error-page.component.ts");
+    var _menu_welcome_page_welcome_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./menu/welcome-page/welcome-page.component */
+    "./src/app/menu/welcome-page/welcome-page.component.ts");
+    /* harmony import */
+
+
+    var _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./visiteur/visite-form/visite-form.component */
+    "./src/app/visiteur/visite-form/visite-form.component.ts");
+    /* harmony import */
+
+
+    var _animal_show_animal_show_animal_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./animal/show-animal/show-animal.component */
+    "./src/app/animal/show-animal/show-animal.component.ts");
+    /* harmony import */
+
+
+    var _espece_add_espece_add_espece_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./espece/add-espece/add-espece.component */
+    "./src/app/espece/add-espece/add-espece.component.ts");
+    /* harmony import */
+
+
+    var _espece_show_espece_show_espece_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./espece/show-espece/show-espece.component */
+    "./src/app/espece/show-espece/show-espece.component.ts");
+    /* harmony import */
+
+
+    var _login_login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./login/login/login.component */
+    "./src/app/login/login/login.component.ts");
+    /* harmony import */
+
+
+    var _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./employe/add-employe/add-employe.component */
+    "./src/app/employe/add-employe/add-employe.component.ts");
 
     var routes = [{
       path: 'addActivite',
@@ -1421,15 +1633,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       path: 'addAnimal',
       component: _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_5__["AddAnimalComponent"]
     }, {
+      path: 'addEmploye',
+      component: _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_13__["AddEmployeComponent"]
+    }, {
+      path: 'showAnimal',
+      component: _animal_show_animal_show_animal_component__WEBPACK_IMPORTED_MODULE_9__["ShowAnimalComponent"]
+    }, {
+      path: 'addEspece',
+      component: _espece_add_espece_add_espece_component__WEBPACK_IMPORTED_MODULE_10__["AddEspeceComponent"]
+    }, {
+      path: 'showEspece',
+      component: _espece_show_espece_show_espece_component__WEBPACK_IMPORTED_MODULE_11__["ShowEspeceComponent"]
+    }, {
       path: 'welcomePage',
-      component: _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"]
+      component: _menu_welcome_page_welcome_page_component__WEBPACK_IMPORTED_MODULE_7__["WelcomePageComponent"]
+    }, {
+      path: 'visitePage',
+      component: _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_8__["VisiteFormComponent"]
+    }, {
+      path: 'loginPage',
+      component: _login_login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"]
     }, {
       path: '',
       redirectTo: '/welcomePage',
       pathMatch: 'full'
     }, {
       path: '**',
-      component: _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_7__["ErrorPageComponent"]
+      component: _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_6__["ErrorPageComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -1439,7 +1669,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
       exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-    })], AppRoutingModule); //  { path: '**', component: PageNotFoundComponent}
+    })], AppRoutingModule); //
 
     /***/
   },
@@ -1572,341 +1802,359 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _my_nav_my_nav_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./my-nav/my-nav.component */
-    "./src/app/my-nav/my-nav.component.ts");
-    /* harmony import */
-
-
-    var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/cdk/layout */
     "./node_modules/@angular/cdk/esm2015/layout.js");
     /* harmony import */
 
 
-    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/toolbar */
     "./node_modules/@angular/material/esm2015/toolbar.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/esm2015/button.js");
     /* harmony import */
 
 
-    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/sidenav */
     "./node_modules/@angular/material/esm2015/sidenav.js");
     /* harmony import */
 
 
-    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @angular/material/icon */
     "./node_modules/@angular/material/esm2015/icon.js");
     /* harmony import */
 
 
-    var _angular_material_list__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_material_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/material/list */
     "./node_modules/@angular/material/esm2015/list.js");
     /* harmony import */
 
 
-    var ngx_material_timepicker__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var ngx_material_timepicker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ngx-material-timepicker */
     "./node_modules/ngx-material-timepicker/fesm2015/ngx-material-timepicker.js");
     /* harmony import */
 
 
-    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/material/slider */
     "./node_modules/@angular/material/esm2015/slider.js");
     /* harmony import */
 
 
-    var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/cdk/a11y */
     "./node_modules/@angular/cdk/esm2015/a11y.js");
     /* harmony import */
 
 
-    var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @angular/cdk/drag-drop */
     "./node_modules/@angular/cdk/esm2015/drag-drop.js");
     /* harmony import */
 
 
-    var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @angular/cdk/portal */
     "./node_modules/@angular/cdk/esm2015/portal.js");
     /* harmony import */
 
 
-    var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @angular/cdk/scrolling */
     "./node_modules/@angular/cdk/esm2015/scrolling.js");
     /* harmony import */
 
 
-    var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! @angular/cdk/stepper */
     "./node_modules/@angular/cdk/esm2015/stepper.js");
     /* harmony import */
 
 
-    var _angular_cdk_table__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _angular_cdk_table__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @angular/cdk/table */
     "./node_modules/@angular/cdk/esm2015/table.js");
     /* harmony import */
 
 
-    var _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! @angular/cdk/tree */
     "./node_modules/@angular/cdk/esm2015/tree.js");
     /* harmony import */
 
 
-    var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @angular/material/autocomplete */
     "./node_modules/@angular/material/esm2015/autocomplete.js");
     /* harmony import */
 
 
-    var _angular_material_badge__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _angular_material_badge__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! @angular/material/badge */
     "./node_modules/@angular/material/esm2015/badge.js");
     /* harmony import */
 
 
-    var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! @angular/material/bottom-sheet */
     "./node_modules/@angular/material/esm2015/bottom-sheet.js");
     /* harmony import */
 
 
-    var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! @angular/material/button-toggle */
     "./node_modules/@angular/material/esm2015/button-toggle.js");
     /* harmony import */
 
 
-    var _angular_material_card__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! @angular/material/card */
     "./node_modules/@angular/material/esm2015/card.js");
     /* harmony import */
 
 
-    var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
     /*! @angular/material/checkbox */
     "./node_modules/@angular/material/esm2015/checkbox.js");
     /* harmony import */
 
 
-    var _angular_material_chips__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! @angular/material/chips */
     "./node_modules/@angular/material/esm2015/chips.js");
     /* harmony import */
 
 
-    var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! @angular/material/stepper */
     "./node_modules/@angular/material/esm2015/stepper.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/esm2015/datepicker.js");
     /* harmony import */
 
 
-    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! @angular/material/dialog */
     "./node_modules/@angular/material/esm2015/dialog.js");
     /* harmony import */
 
 
-    var _angular_material_divider__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _angular_material_divider__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! @angular/material/divider */
     "./node_modules/@angular/material/esm2015/divider.js");
     /* harmony import */
 
 
-    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! @angular/material/expansion */
     "./node_modules/@angular/material/esm2015/expansion.js");
     /* harmony import */
 
 
-    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
     /*! @angular/material/grid-list */
     "./node_modules/@angular/material/esm2015/grid-list.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/esm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_menu__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    var _angular_material_menu__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! @angular/material/menu */
     "./node_modules/@angular/material/esm2015/menu.js");
     /* harmony import */
 
 
-    var _angular_material_core__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    var _angular_material_core__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! @angular/material/core */
     "./node_modules/@angular/material/esm2015/core.js");
     /* harmony import */
 
 
-    var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
+    var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
     /*! @angular/material/paginator */
     "./node_modules/@angular/material/esm2015/paginator.js");
     /* harmony import */
 
 
-    var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
+    var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
     /*! @angular/material/progress-bar */
     "./node_modules/@angular/material/esm2015/progress-bar.js");
     /* harmony import */
 
 
-    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
+    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
     /*! @angular/material/progress-spinner */
     "./node_modules/@angular/material/esm2015/progress-spinner.js");
     /* harmony import */
 
 
-    var _angular_material_radio__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
+    var _angular_material_radio__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
     /*! @angular/material/radio */
     "./node_modules/@angular/material/esm2015/radio.js");
     /* harmony import */
 
 
-    var _angular_material_select__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
+    var _angular_material_select__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
     /*! @angular/material/select */
     "./node_modules/@angular/material/esm2015/select.js");
     /* harmony import */
 
 
-    var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
+    var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
     /*! @angular/material/slide-toggle */
     "./node_modules/@angular/material/esm2015/slide-toggle.js");
     /* harmony import */
 
 
-    var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
+    var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
     /*! @angular/material/snack-bar */
     "./node_modules/@angular/material/esm2015/snack-bar.js");
     /* harmony import */
 
 
-    var _angular_material_sort__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
+    var _angular_material_sort__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
     /*! @angular/material/sort */
     "./node_modules/@angular/material/esm2015/sort.js");
     /* harmony import */
 
 
-    var _angular_material_table__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(
+    var _angular_material_table__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
     /*! @angular/material/table */
     "./node_modules/@angular/material/esm2015/table.js");
     /* harmony import */
 
 
-    var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
+    var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(
     /*! @angular/material/tabs */
     "./node_modules/@angular/material/esm2015/tabs.js");
     /* harmony import */
 
 
-    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(
+    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
     /*! @angular/material/tooltip */
     "./node_modules/@angular/material/esm2015/tooltip.js");
     /* harmony import */
 
 
-    var _angular_material_tree__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(
+    var _angular_material_tree__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(
     /*! @angular/material/tree */
     "./node_modules/@angular/material/esm2015/tree.js");
     /* harmony import */
 
 
-    var _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(
+    var _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(
     /*! ./employe/add-employe/add-employe.component */
     "./src/app/employe/add-employe/add-employe.component.ts");
     /* harmony import */
 
 
-    var _login_login_login_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(
+    var _login_login_login_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(
     /*! ./login/login/login.component */
     "./src/app/login/login/login.component.ts");
     /* harmony import */
 
 
-    var _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(
+    var _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(
     /*! ./animal/add-animal/add-animal.component */
     "./src/app/animal/add-animal/add-animal.component.ts");
     /* harmony import */
 
 
-    var _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(
+    var _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(
     /*! ./visiteur/visite-form/visite-form.component */
     "./src/app/visiteur/visite-form/visite-form.component.ts");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
     /* harmony import */
 
 
-    var _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(
+    var _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(
     /*! ./secteur/add-secteur/add-secteur.component */
     "./src/app/secteur/add-secteur/add-secteur.component.ts");
     /* harmony import */
 
 
-    var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(
+    var _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(
     /*! ./activite/add-activite/add-activite.component */
     "./src/app/activite/add-activite/add-activite.component.ts");
     /* harmony import */
 
 
-    var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
+    var _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(
     /*! ./activite/show-activite/show-activite.component */
     "./src/app/activite/show-activite/show-activite.component.ts");
     /* harmony import */
 
 
-    var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(
+    var _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
     /*! ./menu/menu/menu.component */
     "./src/app/menu/menu/menu.component.ts");
     /* harmony import */
 
 
-    var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(
+    var _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(
     /*! ./menu/error-page/error-page.component */
     "./src/app/menu/error-page/error-page.component.ts");
+    /* harmony import */
+
+
+    var _menu_welcome_page_welcome_page_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(
+    /*! ./menu/welcome-page/welcome-page.component */
+    "./src/app/menu/welcome-page/welcome-page.component.ts");
+    /* harmony import */
+
+
+    var _animal_show_animal_show_animal_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(
+    /*! ./animal/show-animal/show-animal.component */
+    "./src/app/animal/show-animal/show-animal.component.ts");
+    /* harmony import */
+
+
+    var _espece_add_espece_add_espece_component__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(
+    /*! ./espece/add-espece/add-espece.component */
+    "./src/app/espece/add-espece/add-espece.component.ts");
+    /* harmony import */
+
+
+    var _espece_show_espece_show_espece_component__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(
+    /*! ./espece/show-espece/show-espece.component */
+    "./src/app/espece/show-espece/show-espece.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _my_nav_my_nav_component__WEBPACK_IMPORTED_MODULE_6__["MyNavComponent"], _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_50__["AddEmployeComponent"], _login_login_login_component__WEBPACK_IMPORTED_MODULE_51__["LoginComponent"], _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_52__["AddAnimalComponent"], _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_53__["VisiteFormComponent"], _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_56__["AddSecteurComponent"], _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_57__["AddActiviteComponent"], _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_58__["ShowActiviteComponent"], _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_59__["MenuComponent"], _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_60__["ErrorPageComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_7__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_7__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_11__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_14__["MatSliderModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_15__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_19__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_20__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_21__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_16__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_22__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_23__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_24__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_25__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_26__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_27__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_28__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_29__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_30__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_32__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_33__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_34__["MatGridListModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_35__["MatInputModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_36__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_37__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_38__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_39__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_40__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_41__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_37__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_42__["MatSelectModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_43__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_44__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_45__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_46__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_47__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_48__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_49__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"], ngx_material_timepicker__WEBPACK_IMPORTED_MODULE_13__["NgxMaterialTimepickerModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_54__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_55__["ReactiveFormsModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _employe_add_employe_add_employe_component__WEBPACK_IMPORTED_MODULE_49__["AddEmployeComponent"], _login_login_login_component__WEBPACK_IMPORTED_MODULE_50__["LoginComponent"], _animal_add_animal_add_animal_component__WEBPACK_IMPORTED_MODULE_51__["AddAnimalComponent"], _visiteur_visite_form_visite_form_component__WEBPACK_IMPORTED_MODULE_52__["VisiteFormComponent"], _secteur_add_secteur_add_secteur_component__WEBPACK_IMPORTED_MODULE_55__["AddSecteurComponent"], _activite_add_activite_add_activite_component__WEBPACK_IMPORTED_MODULE_56__["AddActiviteComponent"], _activite_show_activite_show_activite_component__WEBPACK_IMPORTED_MODULE_57__["ShowActiviteComponent"], _menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_58__["MenuComponent"], _menu_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_59__["ErrorPageComponent"], _menu_welcome_page_welcome_page_component__WEBPACK_IMPORTED_MODULE_60__["WelcomePageComponent"], _animal_show_animal_show_animal_component__WEBPACK_IMPORTED_MODULE_61__["ShowAnimalComponent"], _espece_add_espece_add_espece_component__WEBPACK_IMPORTED_MODULE_62__["AddEspeceComponent"], _espece_show_espece_show_espece_component__WEBPACK_IMPORTED_MODULE_63__["ShowEspeceComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_6__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_11__["MatListModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_6__["LayoutModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_11__["MatListModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_13__["MatSliderModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_14__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_18__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_19__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_20__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_15__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_21__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_22__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_23__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_24__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_25__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_26__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_27__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_28__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_29__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_30__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_31__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_32__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_33__["MatGridListModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_34__["MatInputModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_35__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_36__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_37__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_38__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_39__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_40__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_36__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_41__["MatSelectModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_42__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_43__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_44__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_45__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_46__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_47__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_48__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_16__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_17__["ScrollingModule"], ngx_material_timepicker__WEBPACK_IMPORTED_MODULE_12__["NgxMaterialTimepickerModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_53__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_54__["ReactiveFormsModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
@@ -2105,6 +2353,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getAll() {
           return this.http.get("/Employes");
         }
+      }, {
+        key: "login",
+        value: function login(employe) {
+          var e = employe;
+          console.log("dddddd " + e);
+          return this.http.get("/login/" + e.identifiant + "/" + e.motdepasse);
+        }
       }]);
 
       return ServiceEmployeService;
@@ -2121,6 +2376,323 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
     })], ServiceEmployeService);
+    /***/
+  },
+
+  /***/
+  "./src/app/espece/add-espece/add-espece.component.css":
+  /*!************************************************************!*\
+    !*** ./src/app/espece/add-espece/add-espece.component.css ***!
+    \************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppEspeceAddEspeceAddEspeceComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2VzcGVjZS9hZGQtZXNwZWNlL2FkZC1lc3BlY2UuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/espece/add-espece/add-espece.component.ts":
+  /*!***********************************************************!*\
+    !*** ./src/app/espece/add-espece/add-espece.component.ts ***!
+    \***********************************************************/
+
+  /*! exports provided: AddEspeceComponent */
+
+  /***/
+  function srcAppEspeceAddEspeceAddEspeceComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddEspeceComponent", function () {
+      return AddEspeceComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _service_espece_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../service-espece.service */
+    "./src/app/espece/service-espece.service.ts");
+
+    var AddEspeceComponent =
+    /*#__PURE__*/
+    function () {
+      function AddEspeceComponent(ngZone, formBuilder, service) {
+        _classCallCheck(this, AddEspeceComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.addForm = this.formBuilder.group({
+          type: '',
+          sexe: '',
+          esperancedevie: '',
+          regimeAlimentaire: '',
+          niveauDeMenace: ''
+        });
+      }
+
+      _createClass(AddEspeceComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          this.service.addEspece(this.addForm.value);
+        }
+      }]);
+
+      return AddEspeceComponent;
+    }();
+
+    AddEspeceComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: _service_espece_service__WEBPACK_IMPORTED_MODULE_3__["ServiceEspeceService"]
+      }];
+    };
+
+    AddEspeceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-add-espece',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./add-espece.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/espece/add-espece/add-espece.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./add-espece.component.css */
+      "./src/app/espece/add-espece/add-espece.component.css")).default]
+    })], AddEspeceComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/espece/service-espece.service.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/espece/service-espece.service.ts ***!
+    \**************************************************/
+
+  /*! exports provided: ServiceEspeceService */
+
+  /***/
+  function srcAppEspeceServiceEspeceServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ServiceEspeceService", function () {
+      return ServiceEspeceService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var httpOptions = {
+      headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+        'Content-Type': 'application/json'
+      })
+    };
+
+    var ServiceEspeceService =
+    /*#__PURE__*/
+    function () {
+      function ServiceEspeceService(http) {
+        _classCallCheck(this, ServiceEspeceService);
+
+        this.http = http;
+      }
+
+      _createClass(ServiceEspeceService, [{
+        key: "addEspece",
+        value: function addEspece(espece) {
+          this.http.post("/addEspece", espece, httpOptions).subscribe(function (res) {
+            console.log(espece);
+          }, function (err) {
+            if (err.error instanceof Error) {
+              console.log('Erreur : ', err.error.message);
+            } else {
+              console.log("Status code", err.status);
+              console.log("Message d'erreur", err.error);
+            }
+          });
+        }
+      }, {
+        key: "getAll",
+        value: function getAll() {
+          return this.http.get("/especes");
+        }
+      }]);
+
+      return ServiceEspeceService;
+    }();
+
+    ServiceEspeceService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    ServiceEspeceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
+    })], ServiceEspeceService);
+    /***/
+  },
+
+  /***/
+  "./src/app/espece/show-espece/show-espece.component.css":
+  /*!**************************************************************!*\
+    !*** ./src/app/espece/show-espece/show-espece.component.css ***!
+    \**************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppEspeceShowEspeceShowEspeceComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "table {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXNwZWNlL3Nob3ctZXNwZWNlL3Nob3ctZXNwZWNlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9lc3BlY2Uvc2hvdy1lc3BlY2Uvc2hvdy1lc3BlY2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/espece/show-espece/show-espece.component.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/espece/show-espece/show-espece.component.ts ***!
+    \*************************************************************/
+
+  /*! exports provided: ShowEspeceComponent */
+
+  /***/
+  function srcAppEspeceShowEspeceShowEspeceComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ShowEspeceComponent", function () {
+      return ShowEspeceComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _service_espece_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../service-espece.service */
+    "./src/app/espece/service-espece.service.ts");
+
+    var ShowEspeceComponent =
+    /*#__PURE__*/
+    function () {
+      function ShowEspeceComponent(service) {
+        var _this5 = this;
+
+        _classCallCheck(this, ShowEspeceComponent);
+
+        this.service = service;
+        this.displayedColumns = ['type', 'sexe', 'esperancedevie', 'regimeAlimentaire', 'niveauDeMenace'];
+        this.service.getAll().subscribe(function (data) {
+          return _this5.especes = data;
+        }, function (error) {
+          return console.log("Erreur " + error);
+        });
+      }
+
+      _createClass(ShowEspeceComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this6 = this;
+
+          this.service.getAll().subscribe(function (data) {
+            return _this6.especes = data;
+          }, function (error) {
+            return console.log("Erreur " + error);
+          });
+        }
+      }]);
+
+      return ShowEspeceComponent;
+    }();
+
+    ShowEspeceComponent.ctorParameters = function () {
+      return [{
+        type: _service_espece_service__WEBPACK_IMPORTED_MODULE_2__["ServiceEspeceService"]
+      }];
+    };
+
+    ShowEspeceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-show-espece',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./show-espece.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/espece/show-espece/show-espece.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./show-espece.component.css */
+      "./src/app/espece/show-espece/show-espece.component.css")).default]
+    })], ShowEspeceComponent);
     /***/
   },
 
@@ -2175,21 +2747,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var src_app_employe_service_employe_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/employe/service-employe.service */
+    "./src/app/employe/service-employe.service.ts");
 
     var LoginComponent =
     /*#__PURE__*/
     function () {
-      function LoginComponent() {
+      function LoginComponent(ngZone, formBuilder, service) {
         _classCallCheck(this, LoginComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.loginbool = true;
+        this.displayedColumns = ['nom', 'identifiant', 'motdepasse', 'prenom', 'adresse', 'dateDeNaissance', 'numSecuSociale', 'role'];
+        this.loginForm = this.formBuilder.group({
+          nom: '',
+          identifiant: '',
+          motdepasse: '',
+          prenom: '',
+          adresse: '',
+          dateDeNaissance: '',
+          numSecuSociale: '',
+          role: ''
+        });
       }
 
       _createClass(LoginComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          var _this7 = this;
+
+          this.service.login(this.loginForm.value).subscribe(function (data) {
+            return _this7.employe = data;
+          }, function (error) {
+            return console.log("Erreur 3" + error);
+          });
+          console.log(this.employe);
+          this.loginbool = false;
+        }
       }]);
 
       return LoginComponent;
     }();
+
+    LoginComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: src_app_employe_service_employe_service__WEBPACK_IMPORTED_MODULE_3__["ServiceEmployeService"]
+      }];
+    };
 
     LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-login',
@@ -2298,7 +2921,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "*{\n    margin: 0px;\n    padding: 0px;\n    font-family: Avenir, sans-serif;\n}\n\nnav{\n    width: 100%;\n    margin: 0px auto 40px auto;\n    background-color: white;\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0px;\n}\n\nnav ul{\n    list-style-type: none;\n}\n\nnav li{\n    float: left;\n    width: 25%;/*100% divisé par le nombre d'éléments de menu*/\n    text-align: center;/*Centre le texte dans les éléments de menu*/\n}\n\n/*Evite que le menu n'ait une hauteur nulle*/\n\nnav ul::after{\n    content: \"\";\n    display: table;\n    clear: both;\n}\n\nnav a{\n    display: block; /*Toute la surface sera cliquable*/\n    text-decoration: none;\n    color: black;\n    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/\n    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/\n}\n\nnav a:hover{\n    color: orange;\n    border-bottom: 2px solid gold;\n}\n\n.conteneur{\n  margin: 0px 20px;\n  height: 1500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWVudS9tZW51L21lbnUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osK0JBQStCO0FBQ25DOztBQUVBO0lBQ0ksV0FBVztJQUNYLDBCQUEwQjtJQUMxQix1QkFBdUI7SUFDdkIsd0JBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixRQUFRO0FBQ1o7O0FBRUE7SUFDSSxxQkFBcUI7QUFDekI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsVUFBVSxDQUFDLCtDQUErQztJQUMxRCxrQkFBa0IsQ0FBQyw0Q0FBNEM7QUFDbkU7O0FBRUEsNENBQTRDOztBQUM1QztJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QsV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYyxFQUFFLGtDQUFrQztJQUNsRCxxQkFBcUI7SUFDckIsWUFBWTtJQUNaLG9DQUFvQyxDQUFDLDhFQUE4RTtJQUNuSCxpQkFBaUIsQ0FBQyxpREFBaUQ7QUFDdkU7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0FBQ2pDOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUvbWVudS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKntcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgZm9udC1mYW1pbHk6IEF2ZW5pciwgc2Fucy1zZXJpZjtcbn1cblxubmF2e1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbjogMHB4IGF1dG8gNDBweCBhdXRvO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBzdGlja3k7XG4gICAgdG9wOiAwcHg7XG59XG5cbm5hdiB1bHtcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG59XG5cbm5hdiBsaXtcbiAgICBmbG9hdDogbGVmdDtcbiAgICB3aWR0aDogMjUlOy8qMTAwJSBkaXZpc8OpIHBhciBsZSBub21icmUgZCfDqWzDqW1lbnRzIGRlIG1lbnUqL1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjsvKkNlbnRyZSBsZSB0ZXh0ZSBkYW5zIGxlcyDDqWzDqW1lbnRzIGRlIG1lbnUqL1xufVxuXG4vKkV2aXRlIHF1ZSBsZSBtZW51IG4nYWl0IHVuZSBoYXV0ZXVyIG51bGxlKi9cbm5hdiB1bDo6YWZ0ZXJ7XG4gICAgY29udGVudDogXCJcIjtcbiAgICBkaXNwbGF5OiB0YWJsZTtcbiAgICBjbGVhcjogYm90aDtcbn1cblxubmF2IGF7XG4gICAgZGlzcGxheTogYmxvY2s7IC8qVG91dGUgbGEgc3VyZmFjZSBzZXJhIGNsaXF1YWJsZSovXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgdHJhbnNwYXJlbnQ7LypFdml0ZSBsZSBkw6ljYWxhZ2UgZGVzIMOpbMOpbWVudHMgc291cyBsZSBtZW51IMOgIGNhdXNlIGRlIGxhIGJvcmR1cmUgZW4gOmhvdmVyKi9cbiAgICBwYWRkaW5nOiAxMHB4IDBweDsvKkFncmFuZGl0IGxlIG1lbnUgZXQgZXNwYWNlIGxhIGJvcmR1cmUgZHUgdGV4dGUqL1xufVxuXG5uYXYgYTpob3ZlcntcbiAgICBjb2xvcjogb3JhbmdlO1xuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCBnb2xkO1xufVxuXG4uY29udGVuZXVye1xuICBtYXJnaW46IDBweCAyMHB4O1xuICBoZWlnaHQ6IDE1MDBweDtcbn0iXX0= */";
+    __webpack_exports__["default"] = "*{\n    margin: 0px;\n    padding: 0px;\n    font-family: Avenir, sans-serif;\n    color:turquoise;\n  \n}\n\nnav{\n    width: 100%;\n    margin: 0px auto 40px auto;\n    background-color: white;\n    position: relative;\n    top: 0px;\n}\n\nnav ul{\n    list-style-type: none;\n\n}\n\nnav li{\n    float: left;\n    width: 25%;\n    text-align: center;\n}\n\nnav ul::after{\n    content: \"\";\n    display: table;\n    clear: both;\n}\n\nnav a{\n    display: block;\n    text-decoration: none;\n    color: teal;\n    border-bottom: 2px solid transparent;\n    padding: 10px 0px;\n}\n\nnav a:hover{\n    color: orange;\n    border-bottom: 2px solid gold;\n}\n\n.conteneur{\n  margin: 0px 20px;\n  height: 1500px;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWVudS9tZW51L21lbnUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osK0JBQStCO0lBQy9CLGVBQWU7O0FBRW5COztBQUVBO0lBQ0ksV0FBVztJQUNYLDBCQUEwQjtJQUMxQix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLFFBQVE7QUFDWjs7QUFFQTtJQUNJLHFCQUFxQjs7QUFFekI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsVUFBVTtJQUNWLGtCQUFrQjtBQUN0Qjs7QUFHQTtJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QsV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYztJQUNkLHFCQUFxQjtJQUNyQixXQUFXO0lBQ1gsb0NBQW9DO0lBQ3BDLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7QUFDakM7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsY0FBYzs7QUFFaEIiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUvbWVudS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKntcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgZm9udC1mYW1pbHk6IEF2ZW5pciwgc2Fucy1zZXJpZjtcbiAgICBjb2xvcjp0dXJxdW9pc2U7XG4gIFxufVxuXG5uYXZ7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHggYXV0byA0MHB4IGF1dG87XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHRvcDogMHB4O1xufVxuXG5uYXYgdWx7XG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuXG59XG5cbm5hdiBsaXtcbiAgICBmbG9hdDogbGVmdDtcbiAgICB3aWR0aDogMjUlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuXG5uYXYgdWw6OmFmdGVye1xuICAgIGNvbnRlbnQ6IFwiXCI7XG4gICAgZGlzcGxheTogdGFibGU7XG4gICAgY2xlYXI6IGJvdGg7XG59XG5cbm5hdiBhe1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBjb2xvcjogdGVhbDtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgcGFkZGluZzogMTBweCAwcHg7XG59XG5cbm5hdiBhOmhvdmVye1xuICAgIGNvbG9yOiBvcmFuZ2U7XG4gICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIGdvbGQ7XG59XG5cbi5jb250ZW5ldXJ7XG4gIG1hcmdpbjogMHB4IDIwcHg7XG4gIGhlaWdodDogMTUwMHB4O1xuICBcbn0iXX0= */";
     /***/
   },
 
@@ -2333,21 +2956,91 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var src_app_employe_service_employe_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/employe/service-employe.service */
+    "./src/app/employe/service-employe.service.ts");
 
     var MenuComponent =
     /*#__PURE__*/
     function () {
-      function MenuComponent() {
+      function MenuComponent(ngZone, formBuilder, service) {
         _classCallCheck(this, MenuComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.employe = {
+          "idEmploye": 0,
+          "nom": "",
+          "identifiant": "",
+          "motdepasse": "",
+          "prenom": "",
+          "adresse": "",
+          "dateDeNaissance": "",
+          "numSecuSociale": "",
+          "role": "Visiteur",
+          "listebassins": []
+        };
+        this.showForm = true;
+        this.loginbool = true;
+        this.loginForm = this.formBuilder.group({
+          nom: '',
+          identifiant: '',
+          motdepasse: '',
+          prenom: '',
+          adresse: '',
+          dateDeNaissance: '',
+          numSecuSociale: '',
+          role: ''
+        });
       }
 
       _createClass(MenuComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "login",
+        value: function login() {
+          console.log("fffffffffff");
+          this.showForm = false;
+        }
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          var _this8 = this;
+
+          this.showForm = true;
+          this.service.login(this.loginForm.value).subscribe(function (data) {
+            return _this8.employe = data;
+          }, function (error) {
+            return console.log("Erreur 3" + error);
+          });
+          console.log(this.employe);
+          this.loginbool = false;
+        }
       }]);
 
       return MenuComponent;
     }();
+
+    MenuComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: src_app_employe_service_employe_service__WEBPACK_IMPORTED_MODULE_3__["ServiceEmployeService"]
+      }];
+    };
 
     MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-menu',
@@ -2362,43 +3055,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./src/app/my-nav/my-nav.component.css":
-  /*!*********************************************!*\
-    !*** ./src/app/my-nav/my-nav.component.css ***!
-    \*********************************************/
+  "./src/app/menu/welcome-page/welcome-page.component.css":
+  /*!**************************************************************!*\
+    !*** ./src/app/menu/welcome-page/welcome-page.component.css ***!
+    \**************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppMyNavMyNavComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuWelcomePageWelcomePageComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".sidenav-container {\n  height: 100%;\n}\n\n.sidenav {\n  width: 200px;\n}\n\n.sidenav .mat-toolbar {\n  background: inherit;\n}\n\n.mat-toolbar.mat-primary {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 1;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbXktbmF2L215LW5hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0Usd0JBQWdCO0VBQWhCLGdCQUFnQjtFQUNoQixNQUFNO0VBQ04sVUFBVTtBQUNaIiwiZmlsZSI6InNyYy9hcHAvbXktbmF2L215LW5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGVuYXYtY29udGFpbmVyIHtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4uc2lkZW5hdiB7XG4gIHdpZHRoOiAyMDBweDtcbn1cblxuLnNpZGVuYXYgLm1hdC10b29sYmFyIHtcbiAgYmFja2dyb3VuZDogaW5oZXJpdDtcbn1cblxuLm1hdC10b29sYmFyLm1hdC1wcmltYXJ5IHtcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgdG9wOiAwO1xuICB6LWluZGV4OiAxO1xufVxuIl19 */";
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21lbnUvd2VsY29tZS1wYWdlL3dlbGNvbWUtcGFnZS5jb21wb25lbnQuY3NzIn0= */";
     /***/
   },
 
   /***/
-  "./src/app/my-nav/my-nav.component.ts":
-  /*!********************************************!*\
-    !*** ./src/app/my-nav/my-nav.component.ts ***!
-    \********************************************/
+  "./src/app/menu/welcome-page/welcome-page.component.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/menu/welcome-page/welcome-page.component.ts ***!
+    \*************************************************************/
 
-  /*! exports provided: MyNavComponent */
+  /*! exports provided: WelcomePageComponent */
 
   /***/
-  function srcAppMyNavMyNavComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuWelcomePageWelcomePageComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "MyNavComponent", function () {
-      return MyNavComponent;
+    __webpack_require__.d(__webpack_exports__, "WelcomePageComponent", function () {
+      return WelcomePageComponent;
     });
     /* harmony import */
 
@@ -2412,43 +3105,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
 
+    var WelcomePageComponent =
+    /*#__PURE__*/
+    function () {
+      function WelcomePageComponent() {
+        _classCallCheck(this, WelcomePageComponent);
+      }
 
-    var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/cdk/layout */
-    "./node_modules/@angular/cdk/esm2015/layout.js");
-    /* harmony import */
+      _createClass(WelcomePageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
 
+      return WelcomePageComponent;
+    }();
 
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! rxjs/operators */
-    "./node_modules/rxjs/_esm2015/operators/index.js");
-
-    var MyNavComponent = function MyNavComponent(breakpointObserver) {
-      _classCallCheck(this, MyNavComponent);
-
-      this.breakpointObserver = breakpointObserver;
-      this.isHandset$ = this.breakpointObserver.observe(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["Breakpoints"].Handset).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (result) {
-        return result.matches;
-      }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["shareReplay"])());
-    };
-
-    MyNavComponent.ctorParameters = function () {
-      return [{
-        type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_2__["BreakpointObserver"]
-      }];
-    };
-
-    MyNavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-my-nav',
+    WelcomePageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-welcome-page',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./my-nav.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/my-nav/my-nav.component.html")).default,
+      /*! raw-loader!./welcome-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/menu/welcome-page/welcome-page.component.html")).default,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./my-nav.component.css */
-      "./src/app/my-nav/my-nav.component.css")).default]
-    })], MyNavComponent);
+      /*! ./welcome-page.component.css */
+      "./src/app/menu/welcome-page/welcome-page.component.css")).default]
+    })], WelcomePageComponent);
     /***/
   },
 
@@ -2626,10 +3307,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             console.log(secteur);
           }, function (err) {
             if (err.error instanceof Error) {
-              console.log('An error occurred:', err.error.message);
+              console.log('Erreur : ', err.error.message);
             } else {
-              console.log('Backend returned status code: ', err.status);
-              console.log('Response body:', err.error);
+              console.log("Status code", err.status);
+              console.log("Message d'erreur", err.error);
             }
           });
         }
@@ -2708,21 +3389,69 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var src_app_activite_service_activite_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/activite/service-activite.service */
+    "./src/app/activite/service-activite.service.ts");
 
     var VisiteFormComponent =
     /*#__PURE__*/
     function () {
-      function VisiteFormComponent() {
+      function VisiteFormComponent(ngZone, formBuilder, service) {
         _classCallCheck(this, VisiteFormComponent);
+
+        this.ngZone = ngZone;
+        this.formBuilder = formBuilder;
+        this.service = service;
+        this.displayedColumns = ['jour', 'nom', 'heureDebut', 'heureFin', 'publiqueOuPrivee'];
+        this.searchForm = this.formBuilder.group({
+          nom: '',
+          jour: '',
+          heureDebut: '',
+          dateArrivee: '',
+          heureFin: '',
+          publiqueOuPrivee: '',
+          idBassin: '',
+          idEmploye: ''
+        });
       }
 
       _createClass(VisiteFormComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "onFormSubmit",
+        value: function onFormSubmit() {
+          var _this9 = this;
+
+          this.service.searchactivite(this.searchForm.value).subscribe(function (data) {
+            return _this9.activites = data;
+          }, function (error) {
+            return console.log("Erreur 3" + error);
+          });
+        }
       }]);
 
       return VisiteFormComponent;
     }();
+
+    VisiteFormComponent.ctorParameters = function () {
+      return [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }, {
+        type: src_app_activite_service_activite_service__WEBPACK_IMPORTED_MODULE_3__["ServiceActiviteService"]
+      }];
+    };
 
     VisiteFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-visite-form',

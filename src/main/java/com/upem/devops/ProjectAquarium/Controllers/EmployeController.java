@@ -65,4 +65,9 @@ public class EmployeController {
         EmployeService.deleteEmploye(id);
     }
 
+    @GetMapping("/login/{identifiant}/{motdepasse}")
+    public Employe login(@PathVariable String identifiant,@PathVariable String motdepasse) {
+        return EmployeService.login(identifiant,motdepasse);
+    }
+
 }

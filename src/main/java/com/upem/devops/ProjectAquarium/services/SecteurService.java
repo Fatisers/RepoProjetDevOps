@@ -5,6 +5,7 @@ import com.upem.devops.ProjectAquarium.models.Secteur;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 /**
@@ -16,6 +17,13 @@ public class SecteurService {
     @Autowired
     private SecteurRepository secteurs;
 
+    @PostConstruct
+    public void init(){
+       Secteur s1 = new Secteur(1,"Secteur X","Cote gauche");
+
+        addSecteur(s1);
+
+    }
 
     public Iterable<Secteur> getSecteurs() {
         return secteurs.findAll();

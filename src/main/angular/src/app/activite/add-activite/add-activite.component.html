@@ -1,6 +1,6 @@
 
 <div align="center">
-    <h2>Form add Activite</h2>
+    <h2>Ajouter une Activite</h2>
     <form [formGroup]="addForm" (ngSubmit)="onFormSubmit()">
             <mat-form-field style="width:300px" appearance="fill">
             <mat-label>Nom de l'activite</mat-label>
@@ -37,7 +37,7 @@
             <br>
             <mat-form-field style="width:300px" appearance="fill" >
             <mat-label>Bassin</mat-label>
-            <mat-select name="publiqueOuPrivee" formControlName="idBassin">
+            <mat-select name="idBassin" formControlName="idBassin">
                 <mat-option value="1">1</mat-option>
                 <mat-option value="2">2</mat-option>
                 
@@ -46,7 +46,7 @@
             <br>
             <mat-form-field style="width:300px" appearance="fill" >
             <mat-label>Employe</mat-label>
-            <mat-select name="publiqueOuPrivee" formControlName="idEmploye">
+            <mat-select name="idEmploye" formControlName="idEmploye">
                     <mat-option value="1">1</mat-option>
                     <mat-option value="2">2</mat-option>
             </mat-select>

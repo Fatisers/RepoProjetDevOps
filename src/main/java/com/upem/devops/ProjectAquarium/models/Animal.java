@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import java.util.StringTokenizer;
 
 
 @Entity
@@ -73,7 +74,13 @@ public class Animal {
 	}
 
 	public void setDateArrivee(String dateArrivee) {
-		this.dateArrivee = dateArrivee;
+		StringTokenizer st = new StringTokenizer(dateArrivee,"-");
+		String year = st.nextToken();
+		String month = st.nextToken();
+		char[] d= st.nextToken().toCharArray();
+		String day = d[0]+""+d[1];
+		String result = day+"/"+month+"/"+year;
+		this.dateArrivee = result;
 	}
 
 	public String getDateDepartPossible() {
@@ -81,7 +88,13 @@ public class Animal {
 	}
 
 	public void setDateDepartPossible(String dateDepartPossible) {
-		this.dateDepartPossible = dateDepartPossible;
+		StringTokenizer st = new StringTokenizer(dateDepartPossible,"-");
+		String year = st.nextToken();
+		String month = st.nextToken();
+		char[] d= st.nextToken().toCharArray();
+		String day = d[0]+""+d[1];
+		String result = day+"/"+month+"/"+year;
+		this.dateDepartPossible = result;
 	}
 
 	public int getIdEspece() {

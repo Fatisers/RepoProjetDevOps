@@ -2,6 +2,7 @@ package com.upem.devops.ProjectAquarium.models;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -111,7 +112,13 @@ public class Employe {
 	}
 
 	public void setDateDeNaissance(String dateDeNaissance) {
-		this.dateDeNaissance = dateDeNaissance;
+		StringTokenizer st = new StringTokenizer(dateDeNaissance,"-");
+		String year = st.nextToken();
+		String month = st.nextToken();
+		char[] d= st.nextToken().toCharArray();
+		String day = d[0]+""+d[1];
+		String result = day+"/"+month+"/"+year;
+		this.dateDeNaissance = result;
 	}
 
 	public String getNumSecuSociale() {
