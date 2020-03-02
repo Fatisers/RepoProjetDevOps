@@ -10,11 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProjectAquariumApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(ProjectAquariumApplication.class, args);
-		SpringApplication app = new SpringApplication(ProjectAquariumApplication.class);
+		SpringApplication.run(ProjectAquariumApplication.class, args);
+		/*SpringApplication app = new SpringApplication(ProjectAquariumApplication.class);
         app.setDefaultProperties(Collections
           .singletonMap("server.port", "8083"));
-        app.run(args);
+        app.run(args);*/
 	}
 
 }
